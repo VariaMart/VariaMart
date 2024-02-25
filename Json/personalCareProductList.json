@@ -1,0 +1,121 @@
+{
+    "list": [
+        {
+            "SKU": "PC-001",
+            "Name": "Nose Strips",
+            "Description": "6 strips",
+            "price": 2.5,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "NoseStrips.PNG",
+            "active": true
+        },
+        {
+            "SKU": "PC-002",
+            "Name": "Veet Legs and body wax strips",
+            "Description": "20 wax strips",
+            "price": 4,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "VeetLegs.jpg",
+            "active": true
+        },
+        {
+            "SKU": "PC-003",
+            "Name": "Intesa hair spray",
+            "Description": "500 mL",
+            "price": 3.1,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "Intesa.PNG",
+            "active": true
+        },
+        {
+            "SKU": "PC-004",
+            "Name": "Tahiti-Pitango",
+            "Description": "250 mL",
+            "price": 1.5,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "tahitiRed.jpg",
+            "active": true
+        },
+        {
+            "SKU": "PC-005",
+            "Name": "Tahiti",
+            "Description": "250 mL",
+            "price": 1.5,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "tahitiBlack.PNG",
+            "active": true
+        },
+        {
+            "SKU": "PC-006",
+            "Name": "Adidas 3 in 1 shower Gel (ice dive)",
+            "Description": "250 mL",
+            "price": 3,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "adidasIceDive.PNG",
+            "active": true
+        },
+        {
+            "SKU": "PC-007",
+            "Name": "Adidas 3 in 1 shower Gel (pure game)",
+            "Description": "250 mL",
+            "price": 3,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "adidasPureGame.PNG",
+            "active": true
+        },
+        {
+            "SKU": "PC-008",
+            "Name": "L'oreal shower gel",
+            "Description": "300 mL",
+            "price": 4,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "LorealStressResist.png",
+            "active": true
+        },
+        {
+            "SKU": "PC-009",
+            "Name": "L'oreal shower gel",
+            "Description": "300 mL",
+            "price": 4,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "LorealPureCarbon.png",
+            "active": true
+        }
+    ]
+}

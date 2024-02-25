@@ -1,0 +1,28 @@
+{
+    "list": [
+        {
+            "id": 1,
+            "Name": "Cleaning & Household",
+            "src": "icon-cleaning.svg",
+            "comingSoon": false
+        },
+        {
+            "id": 2,
+            "Name": "Personal Care",
+            "src": "icon-beauty.svg",
+            "comingSoon": false
+        },
+        {
+            "id": 3,
+            "Name": "Baby Care",
+            "src": "icon-baby.svg",
+            "comingSoon": false
+        },
+        {
+            "id": 4,
+            "Name": "Cloth",
+            "src": "icon-cloth.svg",
+            "comingSoon": true
+        }
+    ]
+}

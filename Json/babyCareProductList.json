@@ -1,0 +1,1122 @@
+{
+    "Product Catalogue": [
+        {
+            "SKU": "HC-001",
+            "Name": "Fairy Liquid",
+            "Description": "450 mL",
+            "Stock Count": 21,
+            "Inventory On Hand": 21,
+            "Box quantity": 1,
+            "Pieces per Box": 21,
+            "Cost per Box": 18,
+            "Cost per Piece": 0.8571428571,
+            " Individual Prices ": 1.2
+        },
+        {
+            "SKU": "HC-002",
+            "Name": "Persil ",
+            "Description": "52 capsul",
+            "Stock Count": 4,
+            "Inventory On Hand": 3,
+            "Box quantity": 1,
+            "Pieces per Box": 4,
+            "Cost per Box": 48,
+            "Cost per Piece": 12,
+            " Individual Prices ": 15
+        },
+        {
+            "SKU": "HC-003",
+            "Name": "Dettol clean and fresh Multipurpose",
+            "Description": "1 Litre ",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 18,
+            "Cost per Piece": 1.5
+        },
+        {
+            "SKU": "HC-004",
+            "Name": "Dettol Liquid lavendre",
+            "Description": "500 ml ",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-005",
+            "Name": "Dettol liquid spray multipurpose",
+            "Description": "1L",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-006",
+            "Name": "Harpic 2",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-007",
+            "Name": "Harpic 2",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-008",
+            "Name": "Gif Cleaning Crem",
+            "Description": "500 ML ",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 12,
+            "Cost per Piece": 1
+        },
+        {
+            "SKU": "HC-009",
+            "Name": "Dettol Handwash",
+            "Description": "200ml",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-010",
+            "Name": "Dettol Handwash",
+            "Description": "200ml",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-011",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 13,
+            "Cost per Piece": 1.083333333
+        },
+        {
+            "SKU": "HC-012",
+            "Name": "Fairy Liquid",
+            "Description": "1.35 L ",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-013",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-014",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-015",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-016",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-017",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-018",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-019",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-020",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "HC-021",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "PERSONAL CARE",
+            "Stock Count": "-",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "PC-001",
+            "Name": "Nose Strips",
+            "Description": "6 strips",
+            "Stock Count": 12,
+            "Inventory On Hand": 12,
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 15,
+            "Cost per Piece": 1.25,
+            " Individual Prices ": 2.5
+        },
+        {
+            "SKU": "PC-002",
+            "Name": "Veet Legs and body wax strips",
+            "Description": "20 wax strips",
+            "Stock Count": 12,
+            "Inventory On Hand": 12,
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 30,
+            "Cost per Piece": 2.5,
+            "Spinneys": 4.99,
+            " Individual Prices ": 4
+        },
+        {
+            "SKU": "PC-003",
+            "Name": "Intesa hair spray",
+            "Description": "500 mL",
+            "Stock Count": 12,
+            "Inventory On Hand": 12,
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 30,
+            "Cost per Piece": 2.5,
+            "Rammal": 3.19,
+            "Spinneys": 3.85,
+            "Le \nCharcutier": 3.19,
+            "Carrefour": 3.5,
+            " Individual Prices ": 3.1
+        },
+        {
+            "SKU": "PC-004",
+            "Name": "Tahiti-Pitango (Red)",
+            "Description": "250 mL",
+            "Stock Count": 12,
+            "Inventory On Hand": 12,
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 16.2,
+            "Cost per Piece": 1.35,
+            "Rammal": 1.49,
+            "Spinneys": 2.05,
+            "Le \nCharcutier": 1.56,
+            "Carrefour": 1.96,
+            " Individual Prices ": 1.5
+        },
+        {
+            "SKU": "PC-005",
+            "Name": "Tahiti (Black)",
+            "Description": "250 mL",
+            "Stock Count": 12,
+            "Inventory On Hand": 12,
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 16.2,
+            "Cost per Piece": 1.35,
+            "Rammal": 1.49,
+            "Spinneys": 2.05,
+            "Le \nCharcutier": 1.56,
+            "Carrefour": 1.96,
+            " Individual Prices ": 1.5
+        },
+        {
+            "SKU": "PC-006",
+            "Name": "Adidas 3 in 1 shower Gel (ice dive)",
+            "Description": "250 mL",
+            "Stock Count": 12,
+            "Inventory On Hand": 12,
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 20,
+            "Cost per Piece": 1.666666667,
+            "Le \nCharcutier": 3.37,
+            "Carrefour": 3.5,
+            " Individual Prices ": 3
+        },
+        {
+            "SKU": "PC-007",
+            "Name": "Adidas 3 in 1 shower Gel (pure game)",
+            "Description": "250 mL",
+            "Stock Count": 12,
+            "Inventory On Hand": 12,
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 20,
+            "Cost per Piece": 1.666666667,
+            "Le \nCharcutier": 3.37,
+            "Carrefour": 3.5,
+            " Individual Prices ": 3
+        },
+        {
+            "SKU": "PC-008",
+            "Name": "L'oreal shower gel (stress resist)",
+            "Description": "300 mL",
+            "Stock Count": 12,
+            "Inventory On Hand": 12,
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 32,
+            "Cost per Piece": 2.666666667,
+            " Individual Prices ": 4
+        },
+        {
+            "SKU": "PC-009",
+            "Name": "L'oreal shower gel (Pure Carbon)",
+            "Description": "300ml",
+            "Stock Count": 12,
+            "Inventory On Hand": 12,
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 32,
+            "Cost per Piece": 2.666666667,
+            " Individual Prices ": 4
+        },
+        {
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TEETH CARE",
+            "Stock Count": "-",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-001",
+            "Name": "Listerine Mouth wash fraicheur intense",
+            "Description": "500ml",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 30,
+            "Cost per Piece": 2.5
+        },
+        {
+            "SKU": "TC-002",
+            "Name": "Colgate Mouth Wash plax Tea &Lemon",
+            "Description": "500 ML ",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-003",
+            "Name": "Aquafresh Tooth paste ",
+            "Description": "100ml",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-004",
+            "Name": "Aquafresh Tooth paste ",
+            "Description": "100ml",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-005",
+            "Name": "Colgate Herbal",
+            "Description": "100ml",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-006",
+            "Name": "Paradontax ",
+            "Description": "75ml",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-007",
+            "Name": "Signal toothpaste daily white",
+            "Description": "75ml",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 9,
+            "Cost per Piece": 0.75
+        },
+        {
+            "SKU": "TC-008",
+            "Name": "Signal toothpaste herbal fresh",
+            "Description": "75ml",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 9,
+            "Cost per Piece": 0.75
+        },
+        {
+            "SKU": "TC-009",
+            "Name": "colgate natural extract blue",
+            "Description": "75ml",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 15,
+            "Cost per Piece": 1.25
+        },
+        {
+            "SKU": "TC-010",
+            "Name": "fluocaril",
+            "Description": "75ml",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-011",
+            "Name": "Oral B tooth brush ",
+            "Description": "Oral b Cross action ",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-012",
+            "Name": "Oral B Electric tooth brush ",
+            "Description": "Oral B pro expert ",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-013",
+            "Name": "Oral B recharge 3d",
+            "Description": "pack of 4",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-014",
+            "Name": "Oral B recharge 3d",
+            "Description": "pack of 2",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-015",
+            "Name": "Oral B 3D white deluxe",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-016",
+            "Name": "Oral B stage power",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 48,
+            "Cost per Piece": 4
+        },
+        {
+            "SKU": "TC-017",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "TC-018",
+            "Name": "Sensodyne extra souple",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 6,
+            "Cost per Piece": 0.5
+        },
+        {
+            "SKU": "TC-019",
+            "Name": "Oral_B essentiel Floss ",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 15,
+            "Cost per Piece": 1.25
+        },
+        {
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "Baby CARE",
+            "Stock Count": "-",
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "SKU": "BC-001",
+            "Name": "Sudo Cream",
+            "Description": "30g",
+            "Box quantity": 1,
+            "Pieces per Box": 12,
+            "Cost per Box": 33,
+            "Cost per Piece": 2.75
+        },
+        {
+            "Cost per Piece": "#DIV/0!"
+        },
+        {
+            "Cost per Piece": "#DIV/0!"
+        }
+    ],
+    "Orders Received": [
+        {
+            "SKU": "PC-001",
+            "Description": "Nose Strips",
+            "Quantity": 1,
+            "Date": 2023,
+            "Price LBP": 200000,
+            "Price USD": 0,
+            "Buyer": "Rafic",
+            "Phone": "-",
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        },
+        {
+            "Date": "-",
+            "Price LBP": 0,
+            "Price USD": 0,
+            "Delivery Price LBP": 0,
+            "Delivery Price USD": 0
+        }
+    ]
+}

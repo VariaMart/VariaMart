@@ -8,16 +8,19 @@ $(document).ready(function () {
   var url = "./Json/";
   if (categoryId == 1) {
     fileTitle = "home";
-    $("#categoryName").text("- Home Care");
+    $("#categoryName").text("- Cleaning & Household");
   } else if (categoryId == 2) {
     fileTitle = "personal";
     $("#categoryName").text("- Personal Care");
   } else if (categoryId == 3) {
-    fileTitle = "teeth";
-    $("#categoryName").text("- Teeth Care");
-  } else if (categoryId == 4) {
     fileTitle = "baby";
     $("#categoryName").text("- Baby Care");
+  } else if (categoryId == 4) {
+    fileTitle = "teeth";
+    $("#categoryName").text("- Teeth Care");
+  } else if (categoryId == 5) {
+    fileTitle = "Cloth";
+    $("#categoryName").text("- Cloth");
   } else if (categoryId == null) {
     window.location.href = "index.html";
   }

@@ -9,7 +9,7 @@
         {
             "id": 2,
             "Name": "Personal Care",
-            "src": "icon-beauty.svg",
+            "src": "icon-personal.svg",
             "comingSoon": false
         },
         {
@@ -20,6 +20,12 @@
         },
         {
             "id": 4,
+            "Name": "Teeth Care",
+            "src": "icon-beauty.svg",
+            "comingSoon": false
+        },
+        {
+            "id": 5,
             "Name": "Cloth",
             "src": "icon-cloth.svg",
             "comingSoon": true

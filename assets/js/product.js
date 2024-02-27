@@ -46,8 +46,9 @@ $(document).ready(function () {
           }
         </div>
         <div class="down-content">
-          <a><i class="fa fa-shopping-bag"></i></a>
-          <a>${product.SKU}</a>
+          <a style="width:150px"><i class="fa fa-shopping-bag" style="margin-right:10px"></i>${
+            product.SKU
+          }</a>
         </div>
       </div>
     </div>`;

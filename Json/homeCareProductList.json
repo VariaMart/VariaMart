@@ -1,9 +1,9 @@
 {
     "list": [
         {
-            "SKU": "HC-001",
-            "Name": "Fairy Liquid",
-            "Description": "450 mL",
+            "sku": "HC-001",
+            "name": "Fairy Liquid",
+            "descriptiom": "450 mL",
             "price": 1.2,
             "currency": "$",
             "discountedPrice": 0,
@@ -14,9 +14,9 @@
             "active": true
         },
         {
-            "SKU": "HC-002",
-            "Name": "Persil ",
-            "Description": "52 capsul",
+            "sku": "HC-002",
+            "name": "Persil ",
+            "descriptiom": "52 capsul",
             "price": 15,
             "currency": "$",
             "discountedPrice": 0,
@@ -27,9 +27,9 @@
             "active": true
         },
         {
-            "SKU": "HC-003",
-            "Name": "Dettol clean and fresh Multipurpose",
-            "Description": "1 Litre ",
+            "sku": "HC-003",
+            "name": "Dettol clean and fresh Multipurpose",
+            "descriptiom": "1 Litre ",
             "price": 0,
             "currency": "$",
             "discountedPrice": 0,
@@ -40,9 +40,9 @@
             "active": true
         },
         {
-            "SKU": "HC-004",
-            "Name": "Dettol Liquid lavendre",
-            "Description": "500 ml ",
+            "sku": "HC-004",
+            "name": "Dettol Liquid lavendre",
+            "descriptiom": "500 ml ",
             "price": 0,
             "currency": "$",
             "discountedPrice": 0,
@@ -50,12 +50,12 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "dettolLiquidLavender.jpg",
-            "active": true
+            "active": false
         },
         {
-            "SKU": "HC-005",
-            "Name": "Dettol liquid spray multipurpose",
-            "Description": "500 ml ",
+            "sku": "HC-005",
+            "name": "Dettol liquid spray multipurpose",
+            "descriptiom": "500 ml ",
             "price": 0,
             "currency": "$",
             "discountedPrice": 0,
@@ -63,12 +63,12 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "DettolLemonSpray.png",
-            "active": true
+            "active": false
         },
         {
-            "SKU": "HC-006",
-            "Name": "Harpic Citrus",
-            "Description": "2x40g",
+            "sku": "HC-006",
+            "name": "Harpic Citrus",
+            "descriptiom": "2x40g",
             "price": 0,
             "currency": "$",
             "discountedPrice": 0,
@@ -76,12 +76,12 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "HarpicActiveFreshLemon.jpg",
-            "active": true
+            "active": false
         },
         {
-            "SKU": "HC-007",
-            "Name": "Harpic",
-            "Description": "2x40g",
+            "sku": "HC-007",
+            "name": "Harpic",
+            "descriptiom": "2x40g",
             "price": 0,
             "currency": "$",
             "discountedPrice": 0,
@@ -92,9 +92,9 @@
             "active": false
         },
         {
-            "SKU": "HC-008",
-            "Name": "Cif Cleaning Crem",
-            "Description": "500 ML ",
+            "sku": "HC-008",
+            "name": "Cif Cleaning Crem",
+            "descriptiom": "500 ML ",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
@@ -105,9 +105,9 @@
             "active": true
         },
         {
-            "SKU": "HC-009",
-            "Name": "Dettol Handwash Sensitive",
-            "Description": "200ml",
+            "sku": "HC-009",
+            "name": "Dettol Handwash Sensitive",
+            "descriptiom": "200ml",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
@@ -115,12 +115,12 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "DettolHandWashPurple.jpg",
-            "active": true
+            "active": false
         },
         {
-            "SKU": "HC-010",
-            "Name": "Dettol Handwash Original",
-            "Description": "200ml",
+            "sku": "HC-010",
+            "name": "Dettol Handwash Original",
+            "descriptiom": "200ml",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
@@ -128,12 +128,12 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "DettolHandWashOriginal.jpg",
-            "active": true
+            "active": false
         },
         {
-            "SKU": "HC-011",
-            "Name": "Palmolive Hand Wash",
-            "Description": "300ml",
+            "sku": "HC-011",
+            "name": "Palmolive Hand Wash",
+            "descriptiom": "Milk & Almond 300ml",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
@@ -144,9 +144,9 @@
             "active": true
         },
         {
-            "SKU": "HC-012",
-            "Name": "Fairy Liquid",
-            "Description": "1.35 L ",
+            "sku": "HC-012",
+            "name": "Fairy Liquid",
+            "descriptiom": "1.35 L ",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
@@ -154,6 +154,45 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "FairyBig.jpg",
+            "active": false
+        },
+        {
+            "sku": "HC-018",
+            "name": "Der General",
+            "descriptiom": "3L+750mL",
+            "price": 1,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "DerGeneral3L.jpg",
+            "active": true
+        },
+        {
+            "sku": "HC-019",
+            "name": "Comfort Softener",
+            "descriptiom": "Long Lasting Fragrance Flora Soft - 3L",
+            "price": 1,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "ComfortPink3L.PNG",
+            "active": true
+        },
+        {
+            "sku": "HC-020",
+            "name": "Persil Gel Lavender",
+            "descriptiom": "2KG = 1L",
+            "price": 1,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "PersilGelLavender1L.jpg",
             "active": true
         }
     ]

@@ -11,8 +11,8 @@
   }
 }
 body {
-  color: var(--text-color-light);
-  background-color: var(--bg-color-light);
+  /* color: var(--text-color-light) !important; */
+  background-color: var(--bg-color-light) !important;
 }
 
 .item {
@@ -20,9 +20,6 @@ body {
   overflow: hidden; /* Hide overflowing content */
 }
 
-.header-area {
-  border-bottom: 1px solid #efb611;
-}
 footer {
   position: fixed;
   left: 0;
@@ -40,6 +37,11 @@ footer {
 .header-area {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid #efb611;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #4e4e4e;
 }
 
 .header-area img {
@@ -52,6 +54,7 @@ footer {
 
 .containerTitle h2 {
   color: #efb611;
+  font-size: 19px;
 }
 
 /* @media (max-width: 992px) {
@@ -87,6 +90,7 @@ footer {
   right: 10px;
   cursor: pointer;
   font-size: 24px;
+  z-index: 1;
 }
 
 .product-item {
@@ -106,6 +110,26 @@ footer {
   .most-played .item .down-content a {
     width: 60%;
   }
+  /* Make the table row flex container */
+  .show-cart tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Set the width of the first cell to 100% */
+  .show-cart td.cartTd {
+    flex-basis: 100%;
+  }
+
+  .cartTd {
+    border-bottom: none !important;
+    padding-bottom: 0px !important;
+  }
+  .cartItemTotal,
+  .priceInputCart {
+    border-top: none !important;
+  }
 }
 
 .trending .item span.price.price-discount,
@@ -119,7 +143,10 @@ footer {
 }
 
 .mainbackArrow {
-  color: #efb611;
+  color: #efb611 !important;
+}
+a:hover {
+  color: #fff !important;
 }
 .sku-container {
   text-align: center;
@@ -136,6 +163,8 @@ footer {
   margin-top: 5px;
   color: red;
   font-weight: bolder;
+  line-height: normal !important;
+  font-size: 12px !important;
 }
 
 .popup-content {
@@ -156,15 +185,85 @@ table {
 
 td,
 th {
-  border: 1px solid #dddddd;
+  /* border: 1px solid #dddddd; */
   text-align: center;
 }
-.grey-bg {
+/* .grey-bg {
   border: 1px solid black;
 
   background-color: #dddddd;
-}
+} */
 #popupDescription {
   font-size: 10px !important;
   line-height: 16px !important;
+}
+
+.btn-primary {
+  background-color: #efb611 !important;
+  border-color: #efb611 !important;
+}
+.cartTd {
+  text-align: left !important;
+  vertical-align: middle !important;
+}
+
+.table.cartTable td,
+.table th {
+  padding: 0px !important;
+}
+
+.cartBtn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.formCartLabel {
+  width: 80px;
+  background-color: #5a6268 !important;
+  color: #fff !important;
+  font-weight: bolder !important;
+}
+.totalPrice {
+  color: green;
+  font-weight: bold;
+}
+
+.thumb {
+  width: 100%; /* Adjust width as needed */
+  height: 100%;
+}
+
+.empty-div {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+.hidden-input {
+  opacity: 0;
+  cursor: pointer;
+
+  /* pointer-events: none; */
+  width: 100%;
+  height: 100%;
+}
+
+.show-cart.table td {
+  vertical-align: middle !important;
+}
+
+.footerData {
+  margin-bottom: 0% !important;
+}
+
+.most-played {
+  margin-bottom: 10px;
+}
+
+main {
+  background-color: #4e4e4e;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
 }

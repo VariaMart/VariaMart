@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Send Mail</title>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+
+<!-- or smtp25.elasticemail.com -->
+<!-- 25, 2525, 587, 465 -->
+  <script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "vvariamartt@gmail.com",
+        Password: "7171C1284341CEB6F0AA7C24F80761EAD45A",
+        To: 'shereen_akoum@hotmail.com,shereenhakoum@gmail.com ,vvariamartt@gmail.com',
+        From: "vvariamartt@gmail.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
+</head>
+<!-- function sendEmail() {
+  Email.send({
+    SecureToken: "d8177bb0-237f-45a9-ab9c-a231d27a6035",
+    To: 'shereen_akoum@hotmail.com',
+    From: "vvariamartt@gmail.com",
+    Subject: "This is the subject",
+    Body: "And this is the body"
+  }).then(
+    message => alert(message)
+  );
+} -->
+<body>
+  <form method="post">
+    <input type="button" value="Send Email" onclick="sendEmail()" />
+  </form>
+</body>
+
+</html>

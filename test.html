@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Read and Write Google Sheet Data</title>
+  </head>
+  <body>
+    <h2>Read Google Sheet Data:</h2>
+    <div id="readResult"></div>
+    <button onclick="readData()">Read Data</button>
+    <button onclick="readData1()">Read Data111</button>
+
+    <h2>Write Google Sheet Data:</h2>
+    <input type="text" id="writeInput" placeholder="Enter data to write" />
+    <button onclick="authenticate()">Write Data</button>
+
+    <script>
+      const apiUrl = "https://sheets.googleapis.com/v4/spreadsheets/";
+
+      const sheetId = "16VszPnGRiPHcFnU78eczPRI3hRJEjHbFFG3vBJUq8wM";
+
+      const clientId =
+        "526082832932-ddtah9a5gcsv3ket41hbeb3nmd1eeamj.apps.googleusercontent.com";
+
+      const apiKey = "AIzaSyCeCvhUUS-Sxryx363mNu-RYlfiDNFJd5o";
+
+      const scope = "https://www.googleapis.com/auth/spreadsheets";
+
+      function authenticate() {
+        gapi.auth.authorize(
+          {
+            client_id: clientId,
+            scope: scope,
+            immediate: false,
+          },
+          handleAuthResult
+        );
+      }
+
+      function handleAuthResult(authResult) {
+        if (authResult && !authResult.error) {
+          writeData(authResult);
+        } else {
+          console.error("Authorization failed:", authResult.error);
+        }
+      }
+
+      function writeData(authResult) {
+        const inputData = document.getElementById("writeInput").value;
+        const accessToken = authResult.access_token;
+        fetch(
+          `${apiUrl}${sheetId}/values/Sheet1!A1:A1:append?valueInputOption=USER_ENTERED&access_token=${accessToken}`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              values: [[inputData]],
+            }),
+          }
+        )
+          .then((response) => response.json())
+          .then((data) => {
+            console.log("Data written successfully:", data);
+          })
+          .catch((error) => {
+            console.error("Error writing data:", error);
+          });
+      }
+
+      function readData() {
+        fetch(`${apiUrl}${sheetId}/values/Products?key=${apiKey}`)
+          .then((response) => response.json())
+          .then((data) => {
+            const values = data.values;
+            const resultDiv = document.getElementById("readResult");
+            resultDiv.innerHTML = "";
+            if (values && values.length > 0) {
+              values.forEach((row) => {
+                console.log(row);
+                row.forEach((cell) => {
+                  console.log(cell);
+                });
+              });
+              // const table = document.createElement("table");
+              // values.forEach((row) => {
+              //   const tr = document.createElement("tr");
+              //   row.forEach((cell) => {
+              //     const td = document.createElement("td");
+              //     td.textContent = cell;
+              //     tr.appendChild(td);
+              //   });
+              //   table.appendChild(tr);
+              // });
+              // resultDiv.appendChild(table);
+            } else {
+              resultDiv.textContent = "No data found";
+            }
+          })
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+            const resultDiv = document.getElementById("readResult");
+            resultDiv.textContent = "Error: " + error.message;
+          });
+      }
+
+      function readData1() {
+        const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
+        const sheetName = "Products";
+        const query = encodeURIComponent("Select *");
+        const url = `${base}&sheet=${sheetName}&tq=${query}`;
+        const data = [];
+
+        console.log("ready");
+
+        fetch(url)
+          .then((res) => res.text())
+          .then((rep) => {
+            const jsData = JSON.parse(rep.substring(47).slice(0, -2));
+            console.log(jsData);
+            const colz = [];
+            jsData.table.cols.forEach((heading) => {
+              if (heading.label) {
+                const propName = heading.label
+                  .toLowerCase()
+                  .replace(/\s/g, "_");
+                colz.push(propName);
+              }
+            });
+            jsData.table.rows.forEach((main) => {
+              if (main.c[0].v == "true") {
+                const row = {};
+                colz.forEach((ele, index) => {
+                  row[ele] = main.c[index] != null ? main.c[index].v : "";
+                });
+                data.push(row);
+              }
+            });
+            console.log(data);
+          })
+          .catch((error) => {
+            console.error("Error fetching data:", error);
+          });
+      }
+
+      function checkForSheetChanges() {
+        readData1();
+      }
+
+      // Set up a timer to call checkForSheetChanges every 10 seconds
+      setInterval(checkForSheetChanges, 10000);
+    </script>
+    <script src="https://apis.google.com/js/client.js"></script>
+  </body>
+</html>

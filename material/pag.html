@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Pagination Example</title>
+    <style>
+        /* CSS for card container */
+        #card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pagination {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pagination button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .pagination .ellipsis {
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="card-container"></div>
+
+<div class="pagination" id="pagination"></div>
+
+<script>
+    const pageSize = 10; // Number of cards per page
+    const totalRecords = 100;
+    const totalPages = Math.ceil(totalRecords / pageSize);
+    let currentPage = 1;
+
+    // Function to generate dummy cards for a page
+    function generateCards(page) {
+        const container = document.getElementById('card-container');
+        container.innerHTML = ''; // Clear previous cards
+
+        const startIdx = (page - 1) * pageSize;
+        const endIdx = Math.min(startIdx + pageSize, totalRecords);
+
+        for (let i = startIdx; i < endIdx; i++) {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.textContent = `Card ${i + 1}`;
+            container.appendChild(card);
+        }
+    }
+
+    // Function to generate pagination controls
+    function generatePaginationControls() {
+        const paginationContainer = document.getElementById('pagination');
+        paginationContainer.innerHTML = ''; // Clear previous pagination controls
+
+        if (totalPages <= 5) {
+            // Show all page buttons
+            for (let i = 1; i <= totalPages; i++) {
+                paginationContainer.appendChild(createButton(i));
+            }
+        } else {
+            // Show only the first, previous, next, last, and ellipsis buttons
+            paginationContainer.appendChild(createButton(1)); // First button
+            paginationContainer.appendChild(createButton('Prev')); // Previous button
+            paginationContainer.appendChild(createEllipsis());
+
+            // Determine which pages to show based on the current page
+            let startPage, endPage;
+            if (currentPage <= 3) {
+                startPage = 1;
+                endPage = 5;
+            } else if (currentPage >= totalPages - 2) {
+                startPage = totalPages - 4;
+                endPage = totalPages;
+            } else {
+                startPage = currentPage - 2;
+                endPage = currentPage + 2;
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                paginationContainer.appendChild(createButton(i));
+            }
+
+            paginationContainer.appendChild(createEllipsis());
+            paginationContainer.appendChild(createButton('Next')); // Next button
+            paginationContainer.appendChild(createButton(totalPages)); // Last button
+        }
+    }
+
+    // Helper function to create a button
+    function createButton(text) {
+        const btn = document.createElement('button');
+        btn.textContent = text;
+        btn.addEventListener('click', () => {
+            if (text === 'Prev') {
+                goToPage(currentPage - 1);
+            } else if (text === 'Next') {
+                goToPage(currentPage + 1);
+            } else {
+                goToPage(parseInt(text));
+            }
+        });
+        return btn;
+    }
+
+    // Helper function to create an ellipsis element
+    function createEllipsis() {
+        const ellipsis = document.createElement('span');
+        ellipsis.textContent = '...';
+        ellipsis.classList.add('ellipsis');
+        return ellipsis;
+    }
+
+    // Function to navigate to a specific page
+    function goToPage(page) {
+        currentPage = page;
+        generateCards(currentPage);
+        generatePaginationControls();
+        highlightCurrentPage();
+    }
+
+    // Function to highlight the current page button
+    function highlightCurrentPage() {
+        const paginationContainer = document.getElementById('pagination');
+        const buttons = paginationContainer.querySelectorAll('button');
+        buttons.forEach(button => {
+            if (parseInt(button.textContent) === currentPage) {
+                button.classList.add('current-page');
+            } else {
+                button.classList.remove('current-page');
+            }
+        });
+    }
+
+    // Show initial page and pagination controls
+    generateCards(currentPage);
+    generatePaginationControls();
+    highlightCurrentPage();
+</script>
+
+</body>
+</html>

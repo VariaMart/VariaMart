@@ -1,81 +1,111 @@
 var list = [];
 var fileTitle = "";
+var url = "./Json/";
 
 $(document).ready(function () {
   var urlParams = new URLSearchParams(window.location.search);
   var categoryId = urlParams.get("categoryId");
 
-  var url = "./Json/";
   if (categoryId == 1) {
-    fileTitle = "home";
+    fileTitle = "homeCare";
     $("#categoryName").text("- Cleaning & Household");
   } else if (categoryId == 2) {
-    fileTitle = "personal";
+    fileTitle = "personalCare";
     $("#categoryName").text("- Personal Care");
   } else if (categoryId == 3) {
-    fileTitle = "baby";
+    fileTitle = "babyCare";
     $("#categoryName").text("- Baby Care");
   } else if (categoryId == 4) {
-    fileTitle = "teeth";
+    fileTitle = "teethCare";
     $("#categoryName").text("- Teeth Care");
   } else if (categoryId == 5) {
-    fileTitle = "Cloth";
+    fileTitle = "cloth";
     $("#categoryName").text("- Cloth");
   } else if (categoryId == null) {
     window.location.href = "index.html";
   }
 
-  $.getJSON((url += fileTitle + "CareProductList.json"), function (data) {
-    var productContainer = $("#productContainer");
-
-    list = data.list;
-
-    list.forEach((product) => {
-      if (product.active) {
-        var productHTML = ` <div class="col-lg-2 col-6">
-      <div class="item product-item" onclick="openPopup('${
-        product.SKU
-      }')" style="background-image: url(assets/images/products/${fileTitle}Care/${
-          product.src
-        });">
-        <div class="thumb">
-          ${
-            product.discountedPrice !== 0
-              ? `<span class="price price-discount"><em>${product.currency}${product.price}</em>${product.currency}${product.discountedPrice}</span>`
-              : `<span class="price">${product.currency}${product.price}</span>`
-          }
-        </div>
-        <div class="down-content">
-          <a style="width:150px"><i class="fa fa-shopping-bag" style="margin-right:10px"></i>${
-            product.SKU
-          }</a>
-        </div>
-      </div>
-    </div>`;
-        productContainer.append(productHTML);
-      }
-    });
-  }).fail(function () {
-    console.log("An error has occurred.");
+  $(".empty-div").click(function () {
+    console.log("empty-div");
   });
+
+  getProducts();
 });
 
-function openPopup(SKU) {
+function getProducts() {
+  fetch(url + fileTitle + "ProductList.json")
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+      return response.json();
+    })
+    .then((data) => {
+      var productContainer = document.getElementById("productContainer");
+      list = data.list;
+
+      list.forEach(function (product) {
+        if (product.active) {
+          var productHTML =
+            '<div class="col-lg-2 col-6">' +
+            '<div class="item product-item" style="background-image: url(assets/images/products/' +
+            fileTitle +
+            "/" +
+            product.src +
+            ');">' +
+            '<div class="thumb">' +
+            '<div class="empty-div"><input readonly type="text" class="hidden-input" id="myInput" onclick="openPopup(\'' +
+            product.sku +
+            "')\"></div>" + // Empty div added here
+            (product.discountedPrice !== 0
+              ? '<span class="price price-discount"><em>' +
+                product.currency +
+                product.price +
+                "</em>" +
+                product.currency +
+                product.discountedPrice +
+                "</span>"
+              : '<span class="price">' +
+                product.currency +
+                product.price +
+                "</span>") +
+            "</div>" +
+            '<div class="down-content">' +
+            "<a onclick=\"addToCart('" +
+            product.sku +
+            '\')" data-sku="' +
+            product.sku +
+            '" style="width:150px"><i class="fa fa-shopping-bag" style="margin-right:10px"></i>Add';
+          "</a>" + "</div>" + "</div>" + "</div>";
+          productContainer.insertAdjacentHTML("beforeend", productHTML);
+        }
+      });
+    })
+    .catch((error) => {
+      console.error("There was a problem with the fetch operation:", error);
+    });
+}
+
+function openPopup(sku) {
   var popupContainer = document.getElementById("popupContainer");
   var popupImage = document.getElementById("popupImage");
   var popupDescription = document.getElementById("popupDescription");
 
   for (const product of list) {
-    if (product.SKU == SKU) {
+    if (product.sku == sku) {
       var Description = `
-      <table>
+      <table class='cartTable table table-striped table-bordered'>
         <tr>
           <td class="grey-bg">SKU</td>
-          <td>${product.SKU}</td>
+          <td>${product.sku}</td>
         </tr>
         <tr>
           <td class="grey-bg">Name</td>
-          <td>${product.Name}</td>
+          <td>${product.name}</td>
+        </tr>
+        <tr>
+          <td class="grey-bg">Description</td>
+          <td>${product.description}</td> <!-- Fixed typo here -->
         </tr>
         <tr>
           <td class="grey-bg">Price</td>
@@ -85,49 +115,96 @@ function openPopup(SKU) {
               : `<td class="price">${product.currency}${product.price}</td>`
           }
         </tr>
-        <tr>
-        <td class="grey-bg">Pack of 3</td>
         ${
-          product.packOf3Price !== 0
-            ? `<td>
-              ${product.currency}${product.packOf3Price}
-            </td>`
-            : `<td>-</td>`
+          fileTitle != "cloth"
+            ? `
+          <tr>
+            <td class="grey-bg">Pack of 3</td>
+            ${
+              product.packOf3Price !== 0
+                ? `<td>${product.currency}${product.packOf3Price}</td>`
+                : `<td>-</td>`
+            }
+          </tr>
+          <tr>
+            <td class="grey-bg">Pack of 6</td>
+            ${
+              product.packOf6Price !== 0
+                ? `<td>${product.currency}${product.packOf6Price}</td>`
+                : `<td>-</td>`
+            }
+          </tr>
+          <tr>
+            <td class="grey-bg">Pack of 12</td>
+            ${
+              product.packOf12Price !== 0
+                ? `<td>${product.currency}${product.packOf12Price}</td>`
+                : `<td>-</td>`
+            }
+          </tr>
+          `
+            : ""
         }
-      </tr>
-      <tr>
-      <td class="grey-bg">Pack of 6</td>
-      ${
-        product.packOf6Price !== 0
-          ? `<td>
-            ${product.currency}${product.packOf6Price}
-          </td>`
-          : `<td>-</td>`
-      }
-    </tr>
-    <tr>
-    <td class="grey-bg">Pack of 12</td>
-    ${
-      product.packOf12Price !== 0
-        ? `<td>
-          ${product.currency}${product.packOf12Price}
-        </td>`
-        : `<td>-</td>`
-    }
-  </tr>
       </table>
     `;
 
-      var imageUrl = `assets/images/products/${fileTitle}Care/${product.src}`;
-      popupImage.src = imageUrl;
+      var imageUrl1 = `assets/images/products/${fileTitle}/${product.src}`;
+      var imageUrl2 = `assets/images/products/${fileTitle}/${product.src1}`;
+
+      popupImage.src = imageUrl1;
       popupImage.classList.add("modal-content");
 
-      // Set fixed width and height
-      popupImage.style.width = "300px"; // Set your desired width
+      // Set fixed width and height for the images
+      popupImage.style.width = "280px"; // Set your desired width
       popupImage.style.height = "200px"; // Set your desired height
 
       // Set object-fit to contain
       popupImage.style.objectFit = "contain";
+
+      // Create arrow buttons for image switching
+      const prevButton = document.createElement("button");
+      // Create an icon element for the previous button
+      const prevIcon = document.createElement("i");
+      prevIcon.classList.add("fa-solid", "fa-chevron-left"); // Assuming you have Font Awesome loaded
+
+      // Append the icon to the previous button
+      prevButton.appendChild(prevIcon);
+
+      const nextButton = document.createElement("button");
+      // Create an icon element for the previous button
+      const nextIcon = document.createElement("i");
+      nextIcon.classList.add("fa-solid", "fa-chevron-right"); // Assuming you have Font Awesome loaded
+
+      // Append the icon to the previous button
+      nextButton.appendChild(nextIcon);
+
+      // Append buttons to the modal
+      const btnsDiv = document.querySelector(".btns");
+      if (product.src1 != undefined) {
+        btnsDiv.appendChild(prevButton);
+        btnsDiv.appendChild(nextButton);
+      }
+      let currentImageIndex = 1; // Start with the first image
+
+      // Function to update the displayed image
+      function updateImage(index) {
+        if (index === 1) {
+          popupImage.src = imageUrl1;
+        } else if (index === 2) {
+          popupImage.src = imageUrl2;
+        }
+      }
+
+      // Event listeners for arrow buttons
+      prevButton.addEventListener("click", () => {
+        currentImageIndex = currentImageIndex === 1 ? 2 : 1;
+        updateImage(currentImageIndex);
+      });
+
+      nextButton.addEventListener("click", () => {
+        currentImageIndex = currentImageIndex === 1 ? 2 : 1;
+        updateImage(currentImageIndex);
+      });
 
       popupDescription.innerHTML = Description;
       popupContainer.style.display = "block";

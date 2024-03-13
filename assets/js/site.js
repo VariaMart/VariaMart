@@ -21,11 +21,11 @@ function getCategories() {
             <div class="image">
               <img
                 src="assets/images/categories/${category.src}"
-                alt="${category.Name}"
+                alt="${category.name}"
                 style="max-width: 44px"
               />
             </div>
-            <h4 class="category-Name">${category.Name}</h4>
+            <h4 class="category-Name">${category.name}</h4>
             ${
               category.comingSoon ? `<p class="comingSoon">Coming Soon</p>` : ""
             }

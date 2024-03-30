@@ -2,8 +2,8 @@
     "list": [
         {
             "sku": "TC-001",
-            "name": "Listerine Mouthwash Cool Mint",
-            "descriptiom": "Cool Mint 500 mL",
+            "name": "Puma Set",
+            "description": "Black & Grey",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -14,9 +14,9 @@
             "active": true
         },
         {
-            "sku": "TC-002",
-            "name": "Colgate Mouth Wash Plax Tea & Lemon",
-            "descriptiom": "Tea & Lemon 250 mL",
+            "sku": "B-003",
+            "name": "Boys - Polo Shirt",
+            "description": "Black",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -27,9 +27,9 @@
             "active": true
         },
         {
-            "sku": "TC-005",
-            "name": "Colgate Herbal",
-            "descriptiom": "125 mL",
+            "sku": "B-002",
+            "name": "Boys - Blue & Brown Set",
+            "description": "-",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -40,22 +40,22 @@
             "active": true
         },
         {
-            "sku": "TC-006",
-            "name": "Paradontax Fluoride",
-            "descriptiom": "Fluoride 75 mL",
+            "sku": "B-001",
+            "name": "Boys - Black & Brown Set",
+            "description": "-",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
             "packOf3Price": 0,
             "packOf6Price": 0,
             "packOf12Price": 0,
-            "src": "BoyBrownSet.jpg",
+            "src": "BoyBlackBrownSet.jpg",
             "active": true
         },
         {
-            "sku": "TC-007",
-            "name": "Signal toothpaste daily white",
-            "descriptiom": "Fluoride 75 mL",
+            "sku": "B-004",
+            "name": "Boys - Puma Short Set",
+            "description": "Black & Grey",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -66,9 +66,9 @@
             "active": true
         },
         {
-            "sku": "TC-008",
-            "name": "Signal Herbal Fresh",
-            "descriptiom": "Herbal Fresh 75 mL",
+            "sku": "G-001",
+            "name": "Girls - Skechers Set",
+            "description": "Grey",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -79,9 +79,9 @@
             "active": true
         },
         {
-            "sku": "TC-009",
-            "name": "Colgate Natural Extract Blue",
-            "descriptiom": "Extract Blue 75 mL",
+            "sku": "G-002",
+            "name": "Girls - Nike Set",
+            "description": "Yellow & Purple",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -92,9 +92,9 @@
             "active": true
         },
         {
-            "sku": "TC-018",
-            "name": "Sensodyne Extra Souple",
-            "descriptiom": "Tooth Brush",
+            "sku": "G-006",
+            "name": "Girls - Flower Dress",
+            "description": "Orange",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -105,9 +105,9 @@
             "active": true
         },
         {
-            "sku": "TC-019",
-            "name": "Oral_B Essential Floss",
-            "descriptiom": "50m",
+            "sku": "G-003",
+            "name": "Girls - Short Set",
+            "description": "Orange & Yellow",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -118,9 +118,9 @@
             "active": true
         },
         {
-            "sku": "TC-020",
-            "name": "Oral_B Mint Satin Floss",
-            "descriptiom": "Mint 25m",
+            "sku": "G-007",
+            "name": "Girls - Boots",
+            "description": "Pink",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -132,9 +132,9 @@
             "active": true
         },
         {
-            "sku": "TC-021",
-            "name": "Dental Floss Tooth Pick",
-            "descriptiom": "40 Pcs",
+            "sku": "G-008",
+            "name": "Girls - Flower Dress",
+            "description": "Pink",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -145,9 +145,9 @@
             "active": true
         },
         {
-            "sku": "TC-021",
-            "name": "Dental Floss Tooth Pick",
-            "descriptiom": "40 Pcs",
+            "sku": "G-009",
+            "name": "Girls - Flower Shirt",
+            "description": "Pink & White",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -158,9 +158,9 @@
             "active": true
         },
         {
-            "sku": "TC-021",
-            "name": "Dental Floss Tooth Pick",
-            "descriptiom": "40 Pcs",
+            "sku": "G-010",
+            "name": "Girls - Jeans Short Set",
+            "description": "Pink",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -171,9 +171,9 @@
             "active": true
         },
         {
-            "sku": "TC-021",
-            "name": "Dental Floss Tooth Pick",
-            "descriptiom": "40 Pcs",
+            "sku": "G-011",
+            "name": "Girls - Square Dress",
+            "description": "Red",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -184,9 +184,9 @@
             "active": true
         },
         {
-            "sku": "TC-021",
-            "name": "Dental Floss Tooth Pick",
-            "descriptiom": "Skechers",
+            "sku": "G-005",
+            "name": "Girls - Skechers Short Set",
+            "description": "Purple",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -197,9 +197,9 @@
             "active": true
         },
         {
-            "sku": "TC-021",
-            "name": "Dental Floss Tooth Pick",
-            "descriptiom": "40 Pcs",
+            "sku": "G-013",
+            "name": "Girls - Dress",
+            "description": "White",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -210,9 +210,9 @@
             "active": true
         },
         {
-            "sku": "TC-021",
-            "name": "Dental Floss Tooth Pick",
-            "descriptiom": "40 Pcs",
+            "sku": "G-004",
+            "name": "Girls - Short Set",
+            "description": "White",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -223,9 +223,9 @@
             "active": true
         },
         {
-            "sku": "TC-021",
-            "name": "Dental Floss Tooth Pick",
-            "descriptiom": "40 Pcs",
+            "sku": "G-012",
+            "name": "Girls - Jeans Short Set",
+            "description": "White",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -236,9 +236,9 @@
             "active": true
         },
         {
-            "sku": "TC-021",
-            "name": "Dental Floss Tooth Pick",
-            "descriptiom": "40 Pcs",
+            "sku": "G-014",
+            "name": "Girls - Square Dress",
+            "description": "Yellow",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,

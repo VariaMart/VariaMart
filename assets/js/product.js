@@ -180,6 +180,7 @@ function openPopup(sku) {
 
       // Append buttons to the modal
       const btnsDiv = document.querySelector(".btns");
+      btnsDiv.innerHTML = "";
       if (product.src1 != undefined) {
         btnsDiv.appendChild(prevButton);
         btnsDiv.appendChild(nextButton);

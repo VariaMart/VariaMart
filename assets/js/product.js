@@ -8,7 +8,7 @@ $(document).ready(function () {
 
   if (categoryId == 1) {
     fileTitle = "homeCare";
-    $("#categoryName").text("- Cleaning & Household");
+    $("#categoryName").text("- Home Care");
   } else if (categoryId == 2) {
     fileTitle = "personalCare";
     $("#categoryName").text("- Personal Care");

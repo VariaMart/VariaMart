@@ -3,7 +3,7 @@
         {
             "sku": "PC-001",
             "name": "Nose Strips",
-            "descriptiom": "6 strips",
+            "description": "6 strips",
             "price": 2.5,
             "currency": "$",
             "discountedPrice": 0,
@@ -16,7 +16,7 @@
         {
             "sku": "PC-002",
             "name": "Veet Legs and Body Wax Strips",
-            "descriptiom": "20 wax strips",
+            "description": "20 wax strips",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -29,7 +29,7 @@
         {
             "sku": "PC-003",
             "name": "Intesa Hair Spray",
-            "descriptiom": "500 mL",
+            "description": "500 mL",
             "price": 3.1,
             "currency": "$",
             "discountedPrice": 0,
@@ -42,7 +42,7 @@
         {
             "sku": "PC-004",
             "name": "Tahiti Pitango Shower Gel",
-            "descriptiom": "Pitango 250 mL",
+            "description": "Pitango 250 mL",
             "price": 1.5,
             "currency": "$",
             "discountedPrice": 0,
@@ -55,7 +55,7 @@
         {
             "sku": "PC-005",
             "name": "Tahiti Tropiques Shower Gel",
-            "descriptiom": "Tropiques 250 mL",
+            "description": "Tropiques 250 mL",
             "price": 1.5,
             "currency": "$",
             "discountedPrice": 0,
@@ -68,7 +68,7 @@
         {
             "sku": "PC-006",
             "name": "Adidas 3 in 1 Shower Gel (Ice Dive)",
-            "descriptiom": "Ice Dive 250 mL",
+            "description": "Ice Dive 250 mL",
             "price": 3,
             "currency": "$",
             "discountedPrice": 0,
@@ -81,7 +81,7 @@
         {
             "sku": "PC-007",
             "name": "Adidas 3 in 1 Shower Gel (Pure Game)",
-            "descriptiom": "Pure Game 250 mL",
+            "description": "Pure Game 250 mL",
             "price": 3,
             "currency": "$",
             "discountedPrice": 0,
@@ -94,7 +94,7 @@
         {
             "sku": "PC-008",
             "name": "L'Oreal Shower Gel (Stress Resist)",
-            "descriptiom": "Stress Resist 300 mL",
+            "description": "Stress Resist 300 mL",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -102,12 +102,12 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "LorealStressResist.png",
-            "active": true
+            "active": false
         },
         {
             "sku": "PC-009",
             "name": "L'Oreal Shower Gel (Pure Carbon)",
-            "descriptiom": "Pure Carbon 300 mL",
+            "description": "Pure Carbon 300 mL",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -115,7 +115,7 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "LorealPureCarbon.png",
-            "active": true
+            "active": false
         }
     ]
 }

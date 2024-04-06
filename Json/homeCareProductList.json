@@ -3,7 +3,7 @@
         {
             "sku": "HC-001",
             "name": "Fairy Liquid",
-            "descriptiom": "450 mL",
+            "description": "450 mL",
             "price": 1.2,
             "currency": "$",
             "discountedPrice": 0,
@@ -16,7 +16,7 @@
         {
             "sku": "HC-002",
             "name": "Persil ",
-            "descriptiom": "52 capsul",
+            "description": "52 capsul",
             "price": 15,
             "currency": "$",
             "discountedPrice": 0,
@@ -29,7 +29,7 @@
         {
             "sku": "HC-003",
             "name": "Dettol clean and fresh Multipurpose",
-            "descriptiom": "1 Litre ",
+            "description": "1 Litre ",
             "price": 0,
             "currency": "$",
             "discountedPrice": 0,
@@ -37,12 +37,12 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "DettolMultipurposeLemon.jpg",
-            "active": true
+            "active": false
         },
         {
             "sku": "HC-004",
             "name": "Dettol Liquid lavendre",
-            "descriptiom": "500 ml ",
+            "description": "500 ml ",
             "price": 0,
             "currency": "$",
             "discountedPrice": 0,
@@ -55,7 +55,7 @@
         {
             "sku": "HC-005",
             "name": "Dettol liquid spray multipurpose",
-            "descriptiom": "500 ml ",
+            "description": "500 ml ",
             "price": 0,
             "currency": "$",
             "discountedPrice": 0,
@@ -68,7 +68,7 @@
         {
             "sku": "HC-006",
             "name": "Harpic Citrus",
-            "descriptiom": "2x40g",
+            "description": "2x40g",
             "price": 0,
             "currency": "$",
             "discountedPrice": 0,
@@ -81,7 +81,7 @@
         {
             "sku": "HC-007",
             "name": "Harpic",
-            "descriptiom": "2x40g",
+            "description": "2x40g",
             "price": 0,
             "currency": "$",
             "discountedPrice": 0,
@@ -94,7 +94,7 @@
         {
             "sku": "HC-008",
             "name": "Cif Cleaning Crem",
-            "descriptiom": "500 ML ",
+            "description": "500 ML ",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
@@ -102,12 +102,12 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "Cif.jpg",
-            "active": true
+            "active": false
         },
         {
             "sku": "HC-009",
             "name": "Dettol Handwash Sensitive",
-            "descriptiom": "200ml",
+            "description": "200ml",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
@@ -120,7 +120,7 @@
         {
             "sku": "HC-010",
             "name": "Dettol Handwash Original",
-            "descriptiom": "200ml",
+            "description": "200ml",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
@@ -133,7 +133,7 @@
         {
             "sku": "HC-011",
             "name": "Palmolive Hand Wash",
-            "descriptiom": "Milk & Almond 300ml",
+            "description": "Milk & Almond 300ml",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
@@ -141,12 +141,12 @@
             "packOf6Price": 0,
             "packOf12Price": 0,
             "src": "palmolivehandwash.PNG",
-            "active": true
+            "active": false
         },
         {
             "sku": "HC-012",
             "name": "Fairy Liquid",
-            "descriptiom": "1.35 L ",
+            "description": "1.35 L ",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
@@ -159,8 +159,8 @@
         {
             "sku": "HC-018",
             "name": "Der General",
-            "descriptiom": "3L+750mL",
-            "price": 1,
+            "description": "3L + 750mL",
+            "price": 3.50,
             "currency": "$",
             "discountedPrice": 0,
             "packOf3Price": 0,
@@ -172,8 +172,8 @@
         {
             "sku": "HC-019",
             "name": "Comfort Softener",
-            "descriptiom": "Long Lasting Fragrance Flora Soft - 3L",
-            "price": 1,
+            "description": "Long Lasting Fragrance Flora Soft - 3L",
+            "price": 3.50,
             "currency": "$",
             "discountedPrice": 0,
             "packOf3Price": 0,
@@ -185,14 +185,66 @@
         {
             "sku": "HC-020",
             "name": "Persil Gel Lavender",
-            "descriptiom": "2KG = 1L",
+            "description": "10KG",
+            "price": 6,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "Persil-Gel-Deep-Clean-Plus-Liquid-Laundry-Detergent-Lavender-4.8L.jpg",
+            "active": true
+        },
+        {
+            "sku": "HC-020",
+            "name": "Persil Gel Lavender",
+            "description": "6KG + 2KG",
+            "price": 5,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "PersilLavender6+2KG.png",
+            "active": true
+        },
+        {
+            "sku": "HC-022",
+            "name": "Ariel Power Gel Flower",
+            "description": "2.5KG + 1.8KG",
             "price": 1,
             "currency": "$",
             "discountedPrice": 0,
             "packOf3Price": 0,
             "packOf6Price": 0,
             "packOf12Price": 0,
-            "src": "PersilGelLavender1L.jpg",
+            "src": "ArielPowerGelFlower.jpg",
+            "active": true
+        },
+        {
+            "sku": "HC-023",
+            "name": "Flash Toilet Cleaner",
+            "description": "1L",
+            "price": 1,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "FlashToiletCleaner1L.jpg",
+            "active": true
+        },
+        {
+            "sku": "HC-024",
+            "name": "Odex BLEACH REGULAR (Blue)",
+            "description": "4KG",
+            "price": 1,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "OdexBLEACHREGULAR.jpg",
             "active": true
         }
     ]

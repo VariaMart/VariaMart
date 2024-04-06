@@ -3,7 +3,7 @@
         {
             "sku": "TC-001",
             "name": "Listerine Mouthwash Cool Mint",
-            "descriptiom": "Cool Mint 500 mL",
+            "description": "Cool Mint 500 mL",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -16,7 +16,7 @@
         {
             "sku": "TC-002",
             "name": "Colgate Mouth Wash Plax Tea & Lemon",
-            "descriptiom": "Tea & Lemon 250 mL",
+            "description": "Tea & Lemon 250 mL",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -29,7 +29,7 @@
         {
             "sku": "TC-005",
             "name": "Colgate Herbal",
-            "descriptiom": "125 mL",
+            "description": "125 mL",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -42,7 +42,7 @@
         {
             "sku": "TC-006",
             "name": "Paradontax Fluoride",
-            "descriptiom": "Fluoride 75 mL",
+            "description": "Fluoride 75 mL",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -55,7 +55,7 @@
         {
             "sku": "TC-007",
             "name": "Signal toothpaste daily white",
-            "descriptiom": "Fluoride 75 mL",
+            "description": "Fluoride 75 mL",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -68,7 +68,7 @@
         {
             "sku": "TC-008",
             "name": "Signal Herbal Fresh",
-            "descriptiom": "Herbal Fresh 75 mL",
+            "description": "Herbal Fresh 75 mL",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -81,7 +81,7 @@
         {
             "sku": "TC-009",
             "name": "Colgate Natural Extract Blue",
-            "descriptiom": "Extract Blue 75 mL",
+            "description": "Extract Blue 75 mL",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -94,7 +94,7 @@
         {
             "sku": "TC-018",
             "name": "Sensodyne Extra Souple",
-            "descriptiom": "Tooth Brush",
+            "description": "Tooth Brush",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -107,7 +107,7 @@
         {
             "sku": "TC-019",
             "name": "Oral_B Essential Floss",
-            "descriptiom": "50m",
+            "description": "50m",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -120,7 +120,7 @@
         {
             "sku": "TC-020",
             "name": "Oral_B Mint Satin Floss",
-            "descriptiom": "Mint 25m",
+            "description": "Mint 25m",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,
@@ -133,7 +133,7 @@
         {
             "sku": "TC-021",
             "name": "Dental Floss Tooth Pick",
-            "descriptiom": "40 Pcs",
+            "description": "40 Pcs",
             "price": 4,
             "currency": "$",
             "discountedPrice": 0,

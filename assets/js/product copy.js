@@ -8,7 +8,7 @@ $(document).ready(function () {
   var url = "./Json/";
   if (categoryId == 1) {
     fileTitle = "home";
-    $("#categoryName").text("- Cleaning & Household");
+    $("#categoryName").text("- Home Care");
   } else if (categoryId == 2) {
     fileTitle = "personal";
     $("#categoryName").text("- Personal Care");

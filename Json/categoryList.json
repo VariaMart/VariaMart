@@ -2,7 +2,7 @@
     "list": [
         {
             "id": 1,
-            "name": "Cleaning & Household",
+            "name": "Home Care",
             "src": "icon-cleaning.svg",
             "comingSoon": false
         },
@@ -22,13 +22,13 @@
             "id": 4,
             "name": "Teeth Care",
             "src": "icon-beauty.svg",
-            "comingSoon": false
+            "comingSoon": true
         },
         {
             "id": 5,
             "name": "Cloth",
             "src": "icon-cloth.svg",
-            "comingSoon": false
+            "comingSoon": true
         }
     ]
 }

@@ -3,7 +3,7 @@
         {
             "sku": "HC-001",
             "name": "Fairy Liquid",
-            "descriptiom": "450 mL",
+            "description": "450 mL",
             "Stock Count": 21,
             "Inventory On Hand": 21,
             "Box quantity": 1,
@@ -15,7 +15,7 @@
         {
             "sku": "HC-002",
             "name": "Persil ",
-            "descriptiom": "52 capsul",
+            "description": "52 capsul",
             "Stock Count": 4,
             "Inventory On Hand": 3,
             "Box quantity": 1,
@@ -27,7 +27,7 @@
         {
             "sku": "HC-003",
             "name": "Dettol clean and fresh Multipurpose",
-            "descriptiom": "1 Litre ",
+            "description": "1 Litre ",
             "Box quantity": 1,
             "Pieces per Box": 12,
             "Cost per Box": 18,
@@ -36,13 +36,13 @@
         {
             "sku": "HC-004",
             "name": "Dettol Liquid lavendre",
-            "descriptiom": "500 ml ",
+            "description": "500 ml ",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "HC-005",
             "name": "Dettol liquid spray multipurpose",
-            "descriptiom": "1L",
+            "description": "1L",
             "Cost per Piece": "#DIV/0!"
         },
         {
@@ -58,7 +58,7 @@
         {
             "sku": "HC-008",
             "name": "Gif Cleaning Crem",
-            "descriptiom": "500 ML ",
+            "description": "500 ML ",
             "Box quantity": 1,
             "Pieces per Box": 12,
             "Cost per Box": 12,
@@ -67,13 +67,13 @@
         {
             "sku": "HC-009",
             "name": "Dettol Handwash",
-            "descriptiom": "200ml",
+            "description": "200ml",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "HC-010",
             "name": "Dettol Handwash",
-            "descriptiom": "200ml",
+            "description": "200ml",
             "Cost per Piece": "#DIV/0!"
         },
         {
@@ -86,7 +86,7 @@
         {
             "sku": "HC-012",
             "name": "Fairy Liquid",
-            "descriptiom": "1.35 L ",
+            "description": "1.35 L ",
             "Cost per Piece": "#DIV/0!"
         },
         {
@@ -136,7 +136,7 @@
         {
             "sku": "PC-001",
             "name": "Nose Strips",
-            "descriptiom": "6 strips",
+            "description": "6 strips",
             "Stock Count": 12,
             "Inventory On Hand": 12,
             "Box quantity": 1,
@@ -148,7 +148,7 @@
         {
             "sku": "PC-002",
             "name": "Veet Legs and body wax strips",
-            "descriptiom": "20 wax strips",
+            "description": "20 wax strips",
             "Stock Count": 12,
             "Inventory On Hand": 12,
             "Box quantity": 1,
@@ -161,7 +161,7 @@
         {
             "sku": "PC-003",
             "name": "Intesa hair spray",
-            "descriptiom": "500 mL",
+            "description": "500 mL",
             "Stock Count": 12,
             "Inventory On Hand": 12,
             "Box quantity": 1,
@@ -177,7 +177,7 @@
         {
             "sku": "PC-004",
             "name": "Tahiti-Pitango (Red)",
-            "descriptiom": "250 mL",
+            "description": "250 mL",
             "Stock Count": 12,
             "Inventory On Hand": 12,
             "Box quantity": 1,
@@ -193,7 +193,7 @@
         {
             "sku": "PC-005",
             "name": "Tahiti (Black)",
-            "descriptiom": "250 mL",
+            "description": "250 mL",
             "Stock Count": 12,
             "Inventory On Hand": 12,
             "Box quantity": 1,
@@ -209,7 +209,7 @@
         {
             "sku": "PC-006",
             "name": "Adidas 3 in 1 shower Gel (ice dive)",
-            "descriptiom": "250 mL",
+            "description": "250 mL",
             "Stock Count": 12,
             "Inventory On Hand": 12,
             "Box quantity": 1,
@@ -223,7 +223,7 @@
         {
             "sku": "PC-007",
             "name": "Adidas 3 in 1 shower Gel (pure game)",
-            "descriptiom": "250 mL",
+            "description": "250 mL",
             "Stock Count": 12,
             "Inventory On Hand": 12,
             "Box quantity": 1,
@@ -237,7 +237,7 @@
         {
             "sku": "PC-008",
             "name": "L'oreal shower gel (stress resist)",
-            "descriptiom": "300 mL",
+            "description": "300 mL",
             "Stock Count": 12,
             "Inventory On Hand": 12,
             "Box quantity": 1,
@@ -249,7 +249,7 @@
         {
             "sku": "PC-009",
             "name": "L'oreal shower gel (Pure Carbon)",
-            "descriptiom": "300ml",
+            "description": "300ml",
             "Stock Count": 12,
             "Inventory On Hand": 12,
             "Box quantity": 1,
@@ -269,7 +269,7 @@
         {
             "sku": "TC-001",
             "name": "Listerine Mouth wash fraicheur intense",
-            "descriptiom": "500ml",
+            "description": "500ml",
             "Box quantity": 1,
             "Pieces per Box": 12,
             "Cost per Box": 30,
@@ -278,37 +278,37 @@
         {
             "sku": "TC-002",
             "name": "Colgate Mouth Wash plax Tea &Lemon",
-            "descriptiom": "500 ML ",
+            "description": "500 ML ",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "TC-003",
             "name": "Aquafresh Tooth paste ",
-            "descriptiom": "100ml",
+            "description": "100ml",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "TC-004",
             "name": "Aquafresh Tooth paste ",
-            "descriptiom": "100ml",
+            "description": "100ml",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "TC-005",
             "name": "Colgate Herbal",
-            "descriptiom": "100ml",
+            "description": "100ml",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "TC-006",
             "name": "Paradontax ",
-            "descriptiom": "75ml",
+            "description": "75ml",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "TC-007",
             "name": "Signal toothpaste daily white",
-            "descriptiom": "75ml",
+            "description": "75ml",
             "Box quantity": 1,
             "Pieces per Box": 12,
             "Cost per Box": 9,
@@ -317,7 +317,7 @@
         {
             "sku": "TC-008",
             "name": "Signal toothpaste herbal fresh",
-            "descriptiom": "75ml",
+            "description": "75ml",
             "Box quantity": 1,
             "Pieces per Box": 12,
             "Cost per Box": 9,
@@ -326,7 +326,7 @@
         {
             "sku": "TC-009",
             "name": "colgate natural extract blue",
-            "descriptiom": "75ml",
+            "description": "75ml",
             "Box quantity": 1,
             "Pieces per Box": 12,
             "Cost per Box": 15,
@@ -335,31 +335,31 @@
         {
             "sku": "TC-010",
             "name": "fluocaril",
-            "descriptiom": "75ml",
+            "description": "75ml",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "TC-011",
             "name": "Oral B tooth brush ",
-            "descriptiom": "Oral b Cross action ",
+            "description": "Oral b Cross action ",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "TC-012",
             "name": "Oral B Electric tooth brush ",
-            "descriptiom": "Oral B pro expert ",
+            "description": "Oral B pro expert ",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "TC-013",
             "name": "Oral B recharge 3d",
-            "descriptiom": "pack of 4",
+            "description": "pack of 4",
             "Cost per Piece": "#DIV/0!"
         },
         {
             "sku": "TC-014",
             "name": "Oral B recharge 3d",
-            "descriptiom": "pack of 2",
+            "description": "pack of 2",
             "Cost per Piece": "#DIV/0!"
         },
         {
@@ -406,7 +406,7 @@
         {
             "sku": "BC-001",
             "name": "Sudo Cream",
-            "descriptiom": "30g",
+            "description": "30g",
             "Box quantity": 1,
             "Pieces per Box": 12,
             "Cost per Box": 33,
@@ -422,7 +422,7 @@
     "Orders Received": [
         {
             "sku": "PC-001",
-            "descriptiom": "Nose Strips",
+            "description": "Nose Strips",
             "Quantity": 1,
             "Date": 2023,
             "Price LBP": 200000,

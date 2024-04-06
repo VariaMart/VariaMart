@@ -196,7 +196,7 @@
             "active": true
         },
         {
-            "sku": "HC-020",
+            "sku": "HC-021",
             "name": "Persil Gel Lavender",
             "description": "6KG + 2KG",
             "price": 5,
@@ -205,7 +205,7 @@
             "packOf3Price": 0,
             "packOf6Price": 0,
             "packOf12Price": 0,
-            "src": "PersilLavender6+2KG.png",
+            "src": "PersilLavender6+2KG.PNG",
             "active": true
         },
         {

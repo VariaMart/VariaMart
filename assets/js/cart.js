@@ -314,7 +314,7 @@ function sendEmail() {
 
   var headerRow = document.createElement("tr");
 
-  var headers = ["SKU", "Name", "Price", "Count"];
+  var headers = ["SKU", "Name", "Price", "Count", "Description"];
 
   headers.forEach(function (headerText) {
     var headerCell = document.createElement("th");
@@ -362,7 +362,7 @@ function sendEmail() {
     Subject: "Order Details from " + customerName,
     Body: emailContent,
   }).then(function (message) {
-    alert("Order Sent");
+    alert("Order Sent\nWe will contact you shortly to confirm the details.");
     sessionStorage.clear();
     location.reload();
   });

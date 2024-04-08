@@ -7,6 +7,7 @@ var shoppingCart = (function () {
     name,
     price,
     count,
+    description,
     packOf3Price,
     packOf6Price,
     packOf12Price
@@ -15,6 +16,7 @@ var shoppingCart = (function () {
     this.name = name;
     this.price = price;
     this.count = count;
+    this.description = description;
     this.packOf3Price = packOf3Price;
     this.packOf6Price = packOf6Price;
     this.packOf12Price = packOf12Price;
@@ -37,6 +39,7 @@ var shoppingCart = (function () {
     name,
     price,
     count,
+    description,
     packOf3Price,
     packOf6Price,
     packOf12Price
@@ -53,6 +56,7 @@ var shoppingCart = (function () {
       name,
       price,
       count,
+      description,
       packOf3Price,
       packOf6Price,
       packOf12Price
@@ -132,13 +136,15 @@ var shoppingCart = (function () {
         itemCopy[p] = item[p];
       }
       itemCopy.total =
-        (item.count == 3 && item.packOf3Price != 0 && item.packOf3Price != "")
+        item.count == 3 && item.packOf3Price != 0 && item.packOf3Price != ""
           ? Number(item.packOf3Price).toFixed(2)
-          : (item.count == 6 && item.packOf6Price != 0 && item.packOf6Price != "")
-            ? Number(item.packOf6Price).toFixed(2)
-            : (item.count == 12 && item.packOf12Price != 0 && item.packOf12Price != "")
-              ? Number(item.packOf12Price).toFixed(2)
-              : Number(item.price * item.count).toFixed(2);
+          : item.count == 6 && item.packOf6Price != 0 && item.packOf6Price != ""
+          ? Number(item.packOf6Price).toFixed(2)
+          : item.count == 12 &&
+            item.packOf12Price != 0 &&
+            item.packOf12Price != ""
+          ? Number(item.packOf12Price).toFixed(2)
+          : Number(item.price * item.count).toFixed(2);
       cartCopy.push(itemCopy);
     }
     return cartCopy;
@@ -155,6 +161,7 @@ function addToCart(sku) {
     selectedProduct.name,
     selectedProduct.price,
     1,
+    selectedProduct.description,
     selectedProduct.packOf3Price,
     selectedProduct.packOf6Price,
     selectedProduct.packOf12Price
@@ -170,19 +177,22 @@ function displayCart() {
     var minusButton =
       cartArray[i].count > 1
         ? "<button class='minus-item input-group-addon btn btn-primary' data-sku='" +
-        cartArray[i].sku +
-        "' data-name='" +
-        cartArray[i].name +
-        "'>-</button>"
+          cartArray[i].sku +
+          "' data-name='" +
+          cartArray[i].name +
+          "'>-</button>"
         : "<button class='delete-item btn btn-danger' data-sku='" +
-        cartArray[i].sku +
-        "' data-name='" +
-        cartArray[i].name +
-        "'><i class='fa fa-trash'></i></button>";
+          cartArray[i].sku +
+          "' data-name='" +
+          cartArray[i].name +
+          "'><i class='fa fa-trash'></i></button>";
     output +=
       "<tr>" +
       "<td class='cartTd'>" +
       cartArray[i].name +
+      "(" +
+      cartArray[i].description +
+      ")" +
       "</td>" +
       "<td class='priceInputCart'><div class='input-group'>" +
       minusButton +
@@ -199,6 +209,7 @@ function displayCart() {
       cartArray[i].name +
       "'>+</button></div></td>" +
       "<td class='cartItemTotal'>" +
+      "$ " +
       cartArray[i].total +
       "</td>" +
       "</tr>";
@@ -321,7 +332,11 @@ function sendEmail() {
     var row = document.createElement("tr");
 
     for (var key in product) {
-      if (key != "packOf3Price" && key != "packOf6Price" && key != "packOf12Price") {
+      if (
+        key != "packOf3Price" &&
+        key != "packOf6Price" &&
+        key != "packOf12Price"
+      ) {
         var cell = document.createElement("td");
         cell.style.border = "1px solid black";
         cell.style.padding = "8px";

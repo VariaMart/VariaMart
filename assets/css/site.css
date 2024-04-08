@@ -267,3 +267,8 @@ main {
   display: flex;
   justify-content: center;
 }
+
+.exchangeRate {
+  font-weight: bold;
+  text-decoration: underline;
+}

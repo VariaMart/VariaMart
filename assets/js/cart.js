@@ -295,12 +295,14 @@ function sendEmail() {
   customerInfoDiv.innerHTML =
     "<p>Customer Name: " +
     customerName +
-    ", Phone Number: " +
+    "</p>" +
+    "<p>Phone Number: " +
     phoneNumber +
     "</p>" +
     "<p>Total Items: " +
     shoppingCart.totalCartItems() +
-    ", Total Price: " +
+    "</p>" +
+    "<p>Total Price: " +
     shoppingCart.totalCart() +
     "</p>" +
     "<p>Date: " +
@@ -340,7 +342,7 @@ function sendEmail() {
         var cell = document.createElement("td");
         cell.style.border = "1px solid black";
         cell.style.padding = "8px";
-        cell.textContent = product[key];
+        cell.textContent = key == "price" ? "$ " + product[key] : product[key];
         row.appendChild(cell);
       }
     }
@@ -358,7 +360,7 @@ function sendEmail() {
     Username: "vvariamartt@gmail.com",
     Password: "7171C1284341CEB6F0AA7C24F80761EAD45A",
     To: "vvariamartt@gmail.com",
-    From: "ismailyoussef25185@gmail.com, vvariamartt@gmail.com",
+    From: "vvariamartt@gmail.com",
     Subject: "Order Details from " + customerName,
     Body: emailContent,
   }).then(function (message) {

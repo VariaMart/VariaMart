@@ -302,7 +302,7 @@ function sendEmail() {
     "<p>Total Items: " +
     shoppingCart.totalCartItems() +
     "</p>" +
-    "<p>Total Price: " +
+    "<p>Total Price: $ " +
     shoppingCart.totalCart() +
     "</p>" +
     "<p>Date: " +

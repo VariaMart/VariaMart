@@ -247,6 +247,45 @@
             "packOf12Price": 0,
             "src": "GirlYellowSquareDress.jpg",
             "active": true
+        },
+        {
+            "sku": "G-015",
+            "name": "Girls - Short Set",
+            "description": "Pink",
+            "price": 4,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "GirlPinkFlowerSet.jpg",
+            "active": true
+        },
+        {
+            "sku": "G-016",
+            "name": "Girls - Adidas Short Set",
+            "description": "Pink",
+            "price": 4,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "GirlAdidasPinkSetShorts.jpg",
+            "active": true
+        },
+        {
+            "sku": "G-017",
+            "name": "Girls - Adidas Short Set",
+            "description": "Purple",
+            "price": 4,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "GirlAdidasPurpleSetShorts.jpg",
+            "active": true
         }
     ]
 }

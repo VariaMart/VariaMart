@@ -274,6 +274,8 @@ main {
 }
 .Whatsapp {
   background-color: #efb611;
+  display: flex;
+  justify-content: center;
 }
 .Whatsapp a {
   text-decoration: none;

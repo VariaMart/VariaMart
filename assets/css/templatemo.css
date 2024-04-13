@@ -143,7 +143,7 @@ body {
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #4e4e4e;
+  background-color: #4c4c4c;
 }
 
 a {
@@ -256,7 +256,7 @@ Pre-loader Style
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #4e4e4e;
+  background-color: #4c4c4c;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -366,7 +366,7 @@ Header Style
 }
 
 .header-area .main-nav {
-  background: #4e4e4e;
+  background: #4c4c4c;
   display: flex;
 }
 
@@ -852,7 +852,7 @@ Services Style
 }
 
 .features .item:hover .image {
-  background-color: #4e4e4e;
+  background-color: #4c4c4c;
 }
 
 /* 
@@ -999,7 +999,7 @@ Most Played Style
   line-height: 40px;
   height: 40px;
   padding: 0px 15px;
-  background-color: #4e4e4e;
+  background-color: #4c4c4c;
   color: #fff;
   border-radius: 20px;
   font-size: 15px;
@@ -1017,7 +1017,7 @@ Most Played Style
 
 .most-played .item .down-content a:hover {
   background-color: #efb611;
-  color: #4e4e4e;
+  color: #4c4c4c;
 }
 
 /* 

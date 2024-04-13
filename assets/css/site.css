@@ -275,6 +275,10 @@ main {
 .Whatsapp {
   background-color: #efb611;
 }
-.Whatsapp p {
-  color: #fff;
+.Whatsapp a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 28px;
+  color: #4a4a4a;
+  font-weight: bold;
 }

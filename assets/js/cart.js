@@ -316,7 +316,7 @@ function sendEmail() {
 
   var headerRow = document.createElement("tr");
 
-  var headers = ["SKU", "Name", "Price", "Count", "Description"];
+  var headers = ["SKU", "Name", "Price", "Quantity", "Description"];
 
   headers.forEach(function (headerText) {
     var headerCell = document.createElement("th");

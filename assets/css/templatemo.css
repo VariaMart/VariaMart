@@ -646,8 +646,8 @@ Header Style
   }
   .header-area {
     background-color: transparent;
-    padding: 0px 15px;
-    height: 80px;
+    /* padding: 0px 15px;
+    height: 80px; */
     box-shadow: none;
     text-align: center;
   }

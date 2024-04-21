@@ -6,31 +6,92 @@ $(document).ready(function () {
   var urlParams = new URLSearchParams(window.location.search);
   var categoryId = urlParams.get("categoryId");
 
-  if (categoryId == 1) {
-    fileTitle = "homeCare";
-    $("#categoryName").text("- Home Care");
-  } else if (categoryId == 2) {
-    fileTitle = "personalCare";
-    $("#categoryName").text("- Personal Care");
-  } else if (categoryId == 3) {
-    fileTitle = "babyCare";
-    $("#categoryName").text("- Baby Care");
-  } else if (categoryId == 4) {
-    fileTitle = "teethCare";
-    $("#categoryName").text("- Teeth Care");
-  } else if (categoryId == 5) {
-    fileTitle = "cloth";
-    $("#categoryName").text("- Cloth");
-  } else if (categoryId == null) {
-    window.location.href = "index.html";
+  const hashValue = window.location.hash;
+
+  if (hashValue == "") {
+    if (categoryId == 1) {
+      fileTitle = "homeCare";
+      $("#categoryName").text("- Home Care");
+    } else if (categoryId == 2) {
+      fileTitle = "personalCare";
+      $("#categoryName").text("- Personal Care");
+    } else if (categoryId == 3) {
+      fileTitle = "babyCare";
+      $("#categoryName").text("- Baby Care");
+    } else if (categoryId == 4) {
+      fileTitle = "teethCare";
+      $("#categoryName").text("- Teeth Care");
+    } else if (categoryId == 5) {
+      fileTitle = "cloth";
+      $("#categoryName").text("- Cloth");
+    } else if (categoryId == null) {
+      window.location.href = "index.html";
+    }
+  } else {
+    if (categoryId == 1) {
+      fileTitle = "boyCloth";
+      $("#categoryName").text("- Cloth Boys");
+    } else if (categoryId == 2) {
+      fileTitle = "girlCloth";
+      $("#categoryName").text("- Cloth Girls");
+    }
   }
 
   $(".empty-div").click(function () {
     console.log("empty-div");
   });
 
-  getProducts();
+  if (categoryId == 5) {
+    getClothCategories();
+  } else {
+    getProducts();
+  }
 });
+
+function openProducts(categoryId, name) {
+  console.log(categoryId);
+  window.location.href =
+    "product-details.html?categoryId=" + categoryId + "#" + name;
+}
+
+function getClothCategories() {
+  $.getJSON("./Json/clothCategoryList.json", function (data) {
+    var categoryContainer = $("#categoryContainer");
+
+    var list = data.list;
+
+    list.forEach((category) => {
+      if (category.active) {
+        var categoryHTML = `
+    <div class="col-lg-2 col-6 p-3 ${
+      category.comingSoon ? "" : `category-item`
+    }">
+      <a ${
+        category.comingSoon
+          ? ""
+          : `onclick="openProducts(${category.id} , '${category.name}')"`
+      } id="${category.id}">
+        <div class="item">
+          <div class="image">
+            <img
+              src="assets/images/categories/${category.src}"
+              alt="${category.name}"
+              style="max-width: 44px"
+            />
+          </div>
+          <h4 class="category-Name">${category.name}</h4>
+          ${category.comingSoon ? `<p class="comingSoon">Coming Soon</p>` : ""}
+        </div>
+      </a>
+    </div>`;
+      }
+      // Append the HTML to categoryContainer
+      categoryContainer.append(categoryHTML);
+    });
+  }).fail(function () {
+    console.log("An error has occurred.");
+  });
+}
 
 function getProducts() {
   fetch(url + fileTitle + "ProductList.json")
@@ -116,7 +177,7 @@ function openPopup(sku) {
           }
         </tr>
         ${
-          fileTitle != "cloth"
+          fileTitle != "boyCloth" && fileTitle != "girlCloth"
             ? `
           <tr>
             <td class="grey-bg">Pack of 3</td>

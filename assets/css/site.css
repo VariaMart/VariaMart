@@ -101,6 +101,12 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  .features .item {
+    padding: 18px !important;
+  }
+  img#popupImage {
+    width: 233px !important;
+  }
   .popup-content {
     width: 90% !important; /* Set popup width to full viewport width */
   }
@@ -108,7 +114,7 @@ footer {
     width: 100px !important;
   } */
   .most-played .item .down-content a {
-    width: 60%;
+    width: 90% !important;
   }
   /* Make the table row flex container */
   .show-cart tr {

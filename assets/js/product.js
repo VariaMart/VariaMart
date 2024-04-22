@@ -31,10 +31,10 @@ $(document).ready(function () {
     if (categoryId == 1) {
       fileTitle = "boyCloth";
       $("#categoryName").text("- Cloth Boys");
-    } else if (categoryId == 2) {
+      $(".mainbackArrow").attr("href", "product-details.html?categoryId=5");    } else if (categoryId == 2) {
       fileTitle = "girlCloth";
       $("#categoryName").text("- Cloth Girls");
-    }
+      $(".mainbackArrow").attr("href", "product-details.html?categoryId=5");    }
   }
 
   $(".empty-div").click(function () {

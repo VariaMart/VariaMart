@@ -19,14 +19,14 @@
             "name": "Men",
             "src": "men.svg",
             "comingSoon": true,
-            "active": true
+            "active": false
         },
         {
             "id": 4,
             "name": "Women",
             "src": "women.svg",
             "comingSoon": true,
-            "active": true
+            "active": false
         }
     ]
 }

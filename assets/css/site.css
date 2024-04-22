@@ -101,6 +101,10 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
+  .item {
+    height: 181px !important; 
+  }
+  
   .features .item {
     padding: 18px !important;
   }

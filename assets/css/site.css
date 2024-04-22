@@ -145,7 +145,7 @@ footer {
 .mainbackArrow {
   color: #efb611 !important;
 }
-a:hover {
+.mainbackArrow:hover {
   color: #fff !important;
 }
 .sku-container {

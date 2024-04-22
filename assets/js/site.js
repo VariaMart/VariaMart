@@ -22,7 +22,7 @@ function getCategories() {
               <img
                 src="assets/images/categories/${category.src}"
                 alt="${category.name}"
-                style="max-width: 44px"
+                style="max-width: 50px"
               />
             </div>
             <h4 class="category-Name">${category.name}</h4>

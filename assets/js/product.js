@@ -31,10 +31,10 @@ $(document).ready(function () {
     if (categoryId == 1) {
       fileTitle = "boyCloth";
       $("#categoryName").text("- Cloth Boys");
-    } else if (categoryId == 2) {
+      $(".mainbackArrow").attr("href", "product-details.html?categoryId=5");    } else if (categoryId == 2) {
       fileTitle = "girlCloth";
       $("#categoryName").text("- Cloth Girls");
-    }
+      $(".mainbackArrow").attr("href", "product-details.html?categoryId=5");    }
   }
 
   $(".empty-div").click(function () {
@@ -76,7 +76,7 @@ function getClothCategories() {
             <img
               src="assets/images/categories/${category.src}"
               alt="${category.name}"
-              style="max-width: 44px"
+              style="max-width: 70px"
             />
           </div>
           <h4 class="category-Name">${category.name}</h4>

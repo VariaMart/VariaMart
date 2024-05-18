@@ -838,6 +838,8 @@ Services Style
   font-size: 17px;
   margin-top: 10px;
   text-transform: uppercase;
+  font-weight: 700;
+  color: #1e1e1e;
 }
 
 .features .item .image {

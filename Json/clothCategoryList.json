@@ -2,29 +2,29 @@
     "list": [
         {
             "id": 1,
-            "name": "Boy",
-            "src": "icon-cleaning.svg",
+            "name": "Boys",
+            "src": "boy.svg",
             "comingSoon": false,
             "active": true
         },
         {
             "id": 2,
-            "name": "Girl",
-            "src": "icon-personal.svg",
+            "name": "Girls",
+            "src": "girl.svg",
             "comingSoon": false,
             "active": true
         },
         {
             "id": 3,
             "name": "Men",
-            "src": "icon-baby.svg",
+            "src": "men.svg",
             "comingSoon": true,
             "active": false
         },
         {
             "id": 4,
             "name": "Women",
-            "src": "icon-beauty.svg",
+            "src": "women.svg",
             "comingSoon": true,
             "active": false
         }

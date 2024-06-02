@@ -59,15 +59,43 @@
         {
             "sku": "B-004",
             "name": "Puma Short Set",
-            "description": "Black & Grey",
-            "age": "5 Years<br>6 Years<br>7 Years",
+            "description": "Black & Grey - 5 Years",
+            "age": "5 Years",
             "price": 25,
             "currency": "$",
             "discountedPrice": 0,
             "packOf3Price": 0,
             "packOf6Price": 0,
             "packOf12Price": 0,
-            "src": "BoyPumaGreenGreySet.jpg",
+            "src": "BoyPumaGreenGreySeta.png",
+            "active": true
+        },
+        {
+            "sku": "B-004b",
+            "name": "Puma Short Set",
+            "description": "Black & Grey - 6 Years",
+            "age": "6 Years",
+            "price": 25,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "BoyPumaGreenGreySetb.png",
+            "active": true
+        },
+        {
+            "sku": "B-004c",
+            "name": "Puma Short Set",
+            "description": "Black & Grey - 7 Years",
+            "age": "7 Years",
+            "price": 25,
+            "currency": "$",
+            "discountedPrice": 0,
+            "packOf3Price": 0,
+            "packOf6Price": 0,
+            "packOf12Price": 0,
+            "src": "BoyPumaGreenGreySetc.png",
             "active": true
         }
     ]

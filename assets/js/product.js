@@ -1,13 +1,13 @@
 var list = [];
 var fileTitle = "";
 var url = "./Json/";
-var hashName = window.location.hash;
+var hashValue = window.location.hash;
 
 $(document).ready(function () {
   var urlParams = new URLSearchParams(window.location.search);
  var categoryId = urlParams.get("categoryId");
 
-  const hashValue = window.location.hash;
+   hashValue = window.location.hash;
 
   if (hashValue == "") {
     if (categoryId == 1) {
@@ -169,7 +169,7 @@ function openPopup(sku) {
             <td class="grey-bg">Description</td>
             <td>${product.description}</td> <!-- Fixed typo here -->
           </tr>
-          ${hashName == "#Boys" || hashName == "#Girls" ? 
+          ${hashValue == "#Boys" || hashValue == "#Girls" ? 
             `<tr style="color:#efb611">
               <td class="grey-bg" style="vertical-align: middle;"><strong>Age</strong></td>
               <td><strong>${product.age}</strong></td> 

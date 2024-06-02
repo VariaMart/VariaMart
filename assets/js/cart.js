@@ -139,12 +139,12 @@ var shoppingCart = (function () {
         item.count == 3 && item.packOf3Price != 0 && item.packOf3Price != ""
           ? Number(item.packOf3Price).toFixed(2)
           : item.count == 6 && item.packOf6Price != 0 && item.packOf6Price != ""
-          ? Number(item.packOf6Price).toFixed(2)
-          : item.count == 12 &&
-            item.packOf12Price != 0 &&
-            item.packOf12Price != ""
-          ? Number(item.packOf12Price).toFixed(2)
-          : Number(item.price * item.count).toFixed(2);
+            ? Number(item.packOf6Price).toFixed(2)
+            : item.count == 12 &&
+              item.packOf12Price != 0 &&
+              item.packOf12Price != ""
+              ? Number(item.packOf12Price).toFixed(2)
+              : Number(item.price * item.count).toFixed(2);
       cartCopy.push(itemCopy);
     }
     return cartCopy;
@@ -155,7 +155,13 @@ var shoppingCart = (function () {
 
 // Update the addToCart function to use shoppingCart object
 function addToCart(sku) {
-  var selectedProduct = list.find((product) => product.sku === sku);
+var hashValue = window.location.hash;
+var cartArray = shoppingCart.listCart();
+var selectedProduct = list.find((product) => product.sku === sku);
+var isProductFoud = cartArray.some((cartProduct) => cartProduct.sku === sku);
+if((hashValue == "#Boys" || hashValue == "#Grils") && isProductFoud)  {
+  return;
+}else {
   shoppingCart.addItemToCart(
     selectedProduct.sku,
     selectedProduct.name,
@@ -168,24 +174,27 @@ function addToCart(sku) {
   );
   displayCart();
 }
+}
 
 // Update the displayCart function to display shopping cart contents
 function displayCart() {
+  var hashValue = window.location.hash;
+
   var cartArray = shoppingCart.listCart();
   var output = "";
   for (var i in cartArray) {
     var minusButton =
       cartArray[i].count > 1
         ? "<button class='minus-item input-group-addon btn btn-primary' data-sku='" +
-          cartArray[i].sku +
-          "' data-name='" +
-          cartArray[i].name +
-          "'>-</button>"
+        cartArray[i].sku +
+        "' data-name='" +
+        cartArray[i].name +
+        "'>-</button>"
         : "<button class='delete-item btn btn-danger' data-sku='" +
-          cartArray[i].sku +
-          "' data-name='" +
-          cartArray[i].name +
-          "'><i class='fa fa-trash'></i></button>";
+        cartArray[i].sku +
+        "' data-name='" +
+        cartArray[i].name +
+        "'><i class='fa fa-trash'></i></button>";
     output +=
       "<tr>" +
       "<td class='cartTd'>" +
@@ -194,25 +203,29 @@ function displayCart() {
       cartArray[i].description +
       ")" +
       "</td>" +
-      "<td class='priceInputCart'><div class='input-group'>" +
-      minusButton +
-      "<input type='tel' style='width:50px' min = 1 class='item-count form-control' data-sku='" +
-      cartArray[i].sku +
-      "' data-name='" +
-      cartArray[i].name +
-      "' value='" +
-      cartArray[i].count +
-      "'>" +
-      "<button class='plus-item btn btn-primary input-group-addon' data-sku='" +
-      cartArray[i].sku +
-      "' data-name='" +
-      cartArray[i].name +
-      "'>+</button></div></td>" +
+      (hashValue == "#Boys" || hashValue == "#Girls" ?
+        "" :
+        "<td class='priceInputCart'><div class='input-group'>" +
+        minusButton +
+        "<input type='tel' style='width:50px' min='1' class='item-count form-control' data-sku='" +
+        cartArray[i].sku +
+        "' data-name='" +
+        cartArray[i].name +
+        "' value='" +
+        cartArray[i].count +
+        "'>" +
+        "<button class='plus-item btn btn-primary input-group-addon' data-sku='" +
+        cartArray[i].sku +
+        "' data-name='" +
+        cartArray[i].name +
+        "'>+</button></div></td>"
+      ) +
       "<td class='cartItemTotal'>" +
       "$ " +
       cartArray[i].total +
       "</td>" +
       "</tr>";
+
   }
   $(".show-cart").html(output);
   $(".item-cart").html(shoppingCart.totalCartItems());

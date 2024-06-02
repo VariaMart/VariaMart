@@ -1,7 +1,7 @@
 {
     "list": [
         {
-            "sku": "TC-001",
+            "sku": "B-005",
             "name": "Puma Set",
             "description": "Black & Grey",
             "price": 4,
@@ -41,9 +41,10 @@
         },
         {
             "sku": "B-001",
-            "name": "Boys - Black & Brown Set",
-            "description": "-",
-            "price": 4,
+            "name": "Ben Sherman",
+            "description": "Black & Brown Set",
+            "age": "6 Years",
+            "price": 30,
             "currency": "$",
             "discountedPrice": 0,
             "packOf3Price": 0,

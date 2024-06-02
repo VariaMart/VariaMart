@@ -1,10 +1,11 @@
 var list = [];
 var fileTitle = "";
 var url = "./Json/";
+var hashName = window.location.hash;
 
 $(document).ready(function () {
   var urlParams = new URLSearchParams(window.location.search);
-  var categoryId = urlParams.get("categoryId");
+ var categoryId = urlParams.get("categoryId");
 
   const hashValue = window.location.hash;
 
@@ -155,99 +156,105 @@ function openPopup(sku) {
   for (const product of list) {
     if (product.sku == sku) {
       var Description = `
-      <table class='cartTable table table-striped table-bordered'>
-        <tr>
-          <td class="grey-bg">SKU</td>
-          <td>${product.sku}</td>
-        </tr>
-        <tr>
-          <td class="grey-bg">Name</td>
-          <td>${product.name}</td>
-        </tr>
-        <tr>
-          <td class="grey-bg">Description</td>
-          <td>${product.description}</td> <!-- Fixed typo here -->
-        </tr>
-        <tr>
-          <td class="grey-bg">Price</td>
-          ${
-            product.discountedPrice !== 0
-              ? `<td style="color: red;"><span style="text-decoration: line-through;">${product.currency}${product.price}</span>&nbsp;<span>${product.currency}${product.discountedPrice}</span></td>`
-              : `<td class="price">${product.currency}${product.price}</td>`
+        <table class='cartTable table table-striped table-bordered'>
+          <tr>
+            <td class="grey-bg">SKU</td>
+            <td>${product.sku}</td>
+          </tr>
+          <tr>
+            <td class="grey-bg">Name</td>
+            <td>${product.name}</td>
+          </tr>
+          <tr>
+            <td class="grey-bg">Description</td>
+            <td>${product.description}</td> <!-- Fixed typo here -->
+          </tr>
+          ${hashName == "#Boys" || hashName == "#Girls" ? 
+            `<tr style="color:#efb611">
+              <td class="grey-bg"><strong>Age</strong></td>
+              <td><strong>${product.age}</strong></td> 
+            </tr>` : ""
           }
-        </tr>
-        ${
-          fileTitle != "boyCloth" && fileTitle != "girlCloth"
-            ? `
           <tr>
-            <td class="grey-bg">Pack of 3</td>
+            <td class="grey-bg">Price</td>
             ${
-              product.packOf3Price !== 0
-                ? `<td>${product.currency}${product.packOf3Price}</td>`
-                : `<td>-</td>`
+              product.discountedPrice !== 0
+                ? `<td style="color: red;"><span style="text-decoration: line-through;">${product.currency}${product.price}</span>&nbsp;<span>${product.currency}${product.discountedPrice}</span></td>`
+                : `<td class="price">${product.currency}${product.price}</td>`
             }
           </tr>
-          <tr>
-            <td class="grey-bg">Pack of 6</td>
-            ${
-              product.packOf6Price !== 0
-                ? `<td>${product.currency}${product.packOf6Price}</td>`
-                : `<td>-</td>`
-            }
-          </tr>
-          <tr>
-            <td class="grey-bg">Pack of 12</td>
-            ${
-              product.packOf12Price !== 0
-                ? `<td>${product.currency}${product.packOf12Price}</td>`
-                : `<td>-</td>`
-            }
-          </tr>
-          `
-            : ""
-        }
-      </table>
-    `;
-
+          ${
+            fileTitle != "boyCloth" && fileTitle != "girlCloth"
+              ? `
+            <tr>
+              <td class="grey-bg">Pack of 3</td>
+              ${
+                product.packOf3Price !== 0
+                  ? `<td>${product.currency}${product.packOf3Price}</td>`
+                  : `<td>-</td>`
+              }
+            </tr>
+            <tr>
+              <td class="grey-bg">Pack of 6</td>
+              ${
+                product.packOf6Price !== 0
+                  ? `<td>${product.currency}${product.packOf6Price}</td>`
+                  : `<td>-</td>`
+              }
+            </tr>
+            <tr>
+              <td class="grey-bg">Pack of 12</td>
+              ${
+                product.packOf12Price !== 0
+                  ? `<td>${product.currency}${product.packOf12Price}</td>`
+                  : `<td>-</td>`
+              }
+            </tr>
+            `
+              : ""
+          }
+        </table>
+      `;
+  
       var imageUrl1 = `assets/images/products/${fileTitle}/${product.src}`;
       var imageUrl2 = `assets/images/products/${fileTitle}/${product.src1}`;
-
+  
       popupImage.src = imageUrl1;
       popupImage.classList.add("modal-content");
-
+  
       // Set fixed width and height for the images
       popupImage.style.width = "280px"; // Set your desired width
       popupImage.style.height = "200px"; // Set your desired height
-
+  
       // Set object-fit to contain
       popupImage.style.objectFit = "contain";
-
+  
       // Create arrow buttons for image switching
       const prevButton = document.createElement("button");
       // Create an icon element for the previous button
       const prevIcon = document.createElement("i");
       prevIcon.classList.add("fa-solid", "fa-chevron-left"); // Assuming you have Font Awesome loaded
-
+  
       // Append the icon to the previous button
       prevButton.appendChild(prevIcon);
-
+  
       const nextButton = document.createElement("button");
       // Create an icon element for the previous button
       const nextIcon = document.createElement("i");
       nextIcon.classList.add("fa-solid", "fa-chevron-right"); // Assuming you have Font Awesome loaded
-
+  
       // Append the icon to the previous button
       nextButton.appendChild(nextIcon);
-
+  
       // Append buttons to the modal
       const btnsDiv = document.querySelector(".btns");
       btnsDiv.innerHTML = "";
-      if (product.src1 != undefined) {
+      if (product.src1 !== undefined) {
         btnsDiv.appendChild(prevButton);
         btnsDiv.appendChild(nextButton);
       }
       let currentImageIndex = 1; // Start with the first image
-
+  
       // Function to update the displayed image
       function updateImage(index) {
         if (index === 1) {
@@ -256,24 +263,24 @@ function openPopup(sku) {
           popupImage.src = imageUrl2;
         }
       }
-
+  
       // Event listeners for arrow buttons
       prevButton.addEventListener("click", () => {
         currentImageIndex = currentImageIndex === 1 ? 2 : 1;
         updateImage(currentImageIndex);
       });
-
+  
       nextButton.addEventListener("click", () => {
         currentImageIndex = currentImageIndex === 1 ? 2 : 1;
         updateImage(currentImageIndex);
       });
-
+  
       popupDescription.innerHTML = Description;
       popupContainer.style.display = "block";
-
+  
       return;
     }
-  }
+  }  
 }
 
 function closePopup() {

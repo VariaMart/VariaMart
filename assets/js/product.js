@@ -171,7 +171,7 @@ function openPopup(sku) {
           </tr>
           ${hashName == "#Boys" || hashName == "#Girls" ? 
             `<tr style="color:#efb611">
-              <td class="grey-bg"><strong>Age</strong></td>
+              <td class="grey-bg" style="vertical-align: middle;"><strong>Age</strong></td>
               <td><strong>${product.age}</strong></td> 
             </tr>` : ""
           }

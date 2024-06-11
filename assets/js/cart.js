@@ -209,7 +209,7 @@ function displayCart() {
       cartArray[i].description +
       ")" +
       "</td>" +
-      (cartArray[i].type == "cloth" ? "<td class='priceInputCart'><div class='input-group' style='justify-content: center;'>" + minusButton +"</div></td>" :
+      (cartArray[i].type == "cloth" ? "<td class='priceInputCart'><div class='input-group' style='justify-content: end;'>" + minusButton +"</div></td>" :
         "<td class='priceInputCart'><div class='input-group'>" +
         minusButton +
         "<input type='tel' style='width:50px' min='1' class='item-count form-control' data-sku='" +

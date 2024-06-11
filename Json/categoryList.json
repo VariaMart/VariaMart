@@ -28,7 +28,7 @@
             "id": 5,
             "name": "Cloth",
             "src": "icon-cloth.svg",
-            "comingSoon": true
+            "comingSoon": false
         }
     ]
 }

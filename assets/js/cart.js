@@ -209,7 +209,7 @@ function displayCart() {
       cartArray[i].description +
       ")" +
       "</td>" +
-      (cartArray[i].type == "cloth" ? "<td class='priceInputCart'><div class='input-group' style='justify-content: end;'>" + minusButton +"</div></td>" :
+      (cartArray[i].type == "cloth" ? "<td class='priceInputCart'><div class='input-group' style='justify-content: end;'>" + minusButton + "</div></td>" :
         "<td class='priceInputCart'><div class='input-group'>" +
         minusButton +
         "<input type='tel' style='width:50px' min='1' class='item-count form-control' data-sku='" +
@@ -334,14 +334,14 @@ function sendEmail() {
 
   var headerRow = document.createElement("tr");
 
-  var headers = ["SKU", "Name", "Price", "Quantity", "Description"];
+  var headers = ["SKU", "Name", "Price", "Quantity", "Type", "Description"];
 
   headers.forEach(function (headerText) {
-    var headerCell = document.createElement("th");
-    headerCell.style.border = "1px solid black";
-    headerCell.style.padding = "8px";
-    headerCell.textContent = headerText;
-    headerRow.appendChild(headerCell);
+      var headerCell = document.createElement("th");
+      headerCell.style.border = "1px solid black";
+      headerCell.style.padding = "8px";
+      headerCell.textContent = headerText;
+      headerRow.appendChild(headerCell);
   });
 
   table.appendChild(headerRow);

@@ -7,6 +7,7 @@ var shoppingCart = (function () {
     name,
     price,
     count,
+    type,
     description,
     packOf3Price,
     packOf6Price,
@@ -16,6 +17,7 @@ var shoppingCart = (function () {
     this.name = name;
     this.price = price;
     this.count = count;
+    this.type = hashValue == "#Boys" || hashValue == "#Girls" ? "cloth" : "product";
     this.description = description;
     this.packOf3Price = packOf3Price;
     this.packOf6Price = packOf6Price;
@@ -39,6 +41,7 @@ var shoppingCart = (function () {
     name,
     price,
     count,
+    type,
     description,
     packOf3Price,
     packOf6Price,
@@ -56,6 +59,7 @@ var shoppingCart = (function () {
       name,
       price,
       count,
+      type,
       description,
       packOf3Price,
       packOf6Price,
@@ -155,25 +159,26 @@ var shoppingCart = (function () {
 
 // Update the addToCart function to use shoppingCart object
 function addToCart(sku) {
-var hashValue = window.location.hash;
-var cartArray = shoppingCart.listCart();
-var selectedProduct = list.find((product) => product.sku === sku);
-var isProductFoud = cartArray.some((cartProduct) => cartProduct.sku === sku);
-if((hashValue == "#Boys" || hashValue == "#Grils") && isProductFoud)  {
-  return;
-}else {
-  shoppingCart.addItemToCart(
-    selectedProduct.sku,
-    selectedProduct.name,
-    selectedProduct.price,
-    1,
-    selectedProduct.description,
-    selectedProduct.packOf3Price,
-    selectedProduct.packOf6Price,
-    selectedProduct.packOf12Price
-  );
-  displayCart();
-}
+  var hashValue = window.location.hash;
+  var cartArray = shoppingCart.listCart();
+  var selectedProduct = list.find((product) => product.sku === sku);
+  var isProductFoud = cartArray.some((cartProduct) => cartProduct.sku === sku);
+  if ((hashValue == "#Boys" || hashValue == "#Grils") && isProductFoud) {
+    return;
+  } else {
+    shoppingCart.addItemToCart(
+      selectedProduct.sku,
+      selectedProduct.name,
+      selectedProduct.price,
+      1,
+      (hashValue == "#Boys" || hashValue == "#Grils" ? "cloth" : "product"),
+      selectedProduct.description,
+      selectedProduct.packOf3Price,
+      selectedProduct.packOf6Price,
+      selectedProduct.packOf12Price
+    );
+    displayCart();
+  }
 }
 
 // Update the displayCart function to display shopping cart contents
@@ -181,6 +186,7 @@ function displayCart() {
   var hashValue = window.location.hash;
 
   var cartArray = shoppingCart.listCart();
+  console.log(cartArray);
   var output = "";
   for (var i in cartArray) {
     var minusButton =
@@ -203,8 +209,7 @@ function displayCart() {
       cartArray[i].description +
       ")" +
       "</td>" +
-      (hashValue == "#Boys" || hashValue == "#Girls" ?
-        "" :
+      (cartArray[i].type == "cloth" ? "<td class='priceInputCart'><div class='input-group' style='justify-content: center;'>" + minusButton +"</div></td>" :
         "<td class='priceInputCart'><div class='input-group'>" +
         minusButton +
         "<input type='tel' style='width:50px' min='1' class='item-count form-control' data-sku='" +

@@ -163,7 +163,7 @@ function addToCart(sku) {
   var cartArray = shoppingCart.listCart();
   var selectedProduct = list.find((product) => product.sku === sku);
   var isProductFoud = cartArray.some((cartProduct) => cartProduct.sku === sku);
-  if ((hashValue == "#Boys" || hashValue == "#Grils") && isProductFoud) {
+  if ((hashValue == "#Boys" || hashValue == "#Girls") && isProductFoud) {
     return;
   } else {
     shoppingCart.addItemToCart(
@@ -171,7 +171,7 @@ function addToCart(sku) {
       selectedProduct.name,
       selectedProduct.price,
       1,
-      (hashValue == "#Boys" || hashValue == "#Grils" ? "cloth" : "product"),
+      (hashValue == "#Boys" || hashValue == "#Girls" ? "cloth" : "product"),
       selectedProduct.description,
       selectedProduct.packOf3Price,
       selectedProduct.packOf6Price,
